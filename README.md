@@ -46,3 +46,27 @@
   - Use Docker for local development
   - Use postgres docker container
   - Use docker-compose to run the app and db
+
+
+## TODO
+ - [x] Initialized
+ - [x] Setup ShadCN
+ - [x] Setup Tailwind CSS
+ - [x] Add Redux toolkit
+   - [] Add rtk query
+ - [ ] Add BetterAuth
+ - [ ] Add DB
+   - [ ] Add NeonDB
+   - [ ] Add Drizzle ORM
+   - [ ] Configure .env 
+ - [ ] Dockerize
+   - [ ] Add postgres docker container
+   - [ ] Add docker-compose
+ - [ ] Setup Test
+   - [] Add jest
+   - [] Add React testing library
+   - [] Add supertest
+   - [] Add Istanbul
+   - [] Add coverage
+   - [] Add Husky precommit
+  
