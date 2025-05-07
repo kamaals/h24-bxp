@@ -62,11 +62,11 @@
  - [ ] Dockerize
    - [ ] Add postgres docker container
    - [ ] Add docker-compose
- - [ ] Setup Test
-   - [] Add jest
-   - [] Add React testing library
+ - [x] Setup Test
+   - [x] Add jest
+   - [x] Add React testing library
    - [] Add supertest
-   - [] Add Istanbul
-   - [] Add coverage
+   - [x] Add Istanbul
+   - [x] Add coverage
    - [] Add Husky precommit
   
