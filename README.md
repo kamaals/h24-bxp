@@ -55,14 +55,20 @@
  - [x] Add Redux toolkit
    - [] Add rtk query
  - [ ] Add BetterAuth
- - [ ] Add DB
-   - [ ] Add NeonDB
-   - [ ] Add Drizzle ORM
-   - [ ] Configure .env 
+ - [] Add DB
+   - [x] Add postgres (Docker)
+   - [] Add NeonDB
+   - [x] Add Drizzle ORM
+   - [x] Migrate postgres
+   - [] Add Schemas
+     - [] Product
+     - [] Category
+     - [] Attribute
+   - [] Configure .env 
  - [ ] Dockerize
    - [ ] Add postgres docker container
    - [ ] Add docker-compose
- - [x] Setup Test
+ - [ ] Setup Test
    - [x] Add jest
    - [x] Add React testing library
    - [] Add supertest
