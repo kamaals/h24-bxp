@@ -18,12 +18,12 @@ vi.mock("next/font/google", () => ({
   })),
 }));
 
-describe("App", () => {
-  it("renders the App component", () => {
+describe("RootLayout", () => {
+  it("renders the RootLayout component", () => {
     const result = render(
       <RootLayout>
         <div>Hi</div>
-      </RootLayout>
+      </RootLayout>,
     );
     expect(result).toMatchSnapshot();
   });
