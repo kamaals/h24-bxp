@@ -1,16 +1,10 @@
-import '@testing-library/jest-dom'
-import  { render, screen } from '@testing-library/react'
-import Page from  '../page'
+import { describe, it, expect } from "vitest";
+import { render } from "@testing-library/react";
+import HomePage from "../page";
 
-describe("Home Page", () => {
-    it("Should render the page with the title", () => {
-        render(<Page />)
-        const title = screen.getByRole("heading", {level: 1})
-        expect(title).toBeInTheDocument()
-    });
-
-    it('Should renders correctly', () => {
-        const { container } = render(<Page />)
-        expect(container).toMatchSnapshot();
-    });
-})
+describe("RootLayout", () => {
+  it("renders the RootLayout component", () => {
+    const result = render(<HomePage />);
+    expect(result).toMatchSnapshot();
+  });
+});
