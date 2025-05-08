@@ -1,3 +1,4 @@
+/* istanbul ignore file @preserve */
 import env from "@/lib/env";
 import { defineConfig } from "drizzle-kit";
 

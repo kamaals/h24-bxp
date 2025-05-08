@@ -1,15 +1,18 @@
-import Image from "next/image";
+import React from "react";
+import Link from "next/link";
 
 export default function Home() {
   return (
-      <section>
-        <h1>Hello</h1>
-        <main>
-          <p>Hello and welcome!</p>
-        </main>
-        <footer>
-          Hi
-        </footer>
-      </section>
+    <section>
+      <h1>Welcome!</h1>
+      <header>
+        <Link href={"/dashboard"}>Dash</Link>
+        <Link href={"/login"}>Login</Link>
+      </header>
+      <main>
+        <p>Hello and welcome!</p>
+      </main>
+      <footer>Hi</footer>
+    </section>
   );
 }
