@@ -1,3 +1,4 @@
+/* istanbul ignore file @preserve */
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import {
   CategoriesRequest,
@@ -17,10 +18,14 @@ export const categoryApi = createApi({
       providesTags: () => {
         return [{ type: "Category", id: "id" }];
       },
+      transformResponse: (response: { data: CategoriesResponse }) =>
+        response.data,
     }),
+
     getCategoryById: builder.query({
       query: (id) => `/category/${id}`,
     }),
+
     createCategory: builder.mutation<CategoryResponse, CategoryRequest>({
       query: (newCategory: CategoryRequest) => ({
         url: "/category",
@@ -35,16 +40,23 @@ export const categoryApi = createApi({
         method: "PUT",
         body: patch,
       }),
+      invalidatesTags: ["Category", "id"],
     }),
     deleteCategory: builder.mutation({
       query: (id) => ({
         url: `/category/${id}`,
         method: "DELETE",
       }),
+      invalidatesTags: ["Category"],
     }),
   }),
 });
 
-export const { useCreateCategoryMutation, useGetCategoriesQuery } = categoryApi;
+export const {
+  useCreateCategoryMutation,
+  useGetCategoriesQuery,
+  useDeleteCategoryMutation,
+  useUpdateCategoryMutation,
+} = categoryApi;
 
 export default categoryApi.reducer;

@@ -1,7 +1,11 @@
+"use client";
 import React from "react";
 import { CategoryDocType, CategoryType } from "@/lib/types/category";
 import RHFInput from "@/components/atoms/rhf/rhf-input";
-import { useCreateCategoryMutation } from "@/lib/store/api/categoryServices";
+import {
+  useCreateCategoryMutation,
+  useUpdateCategoryMutation,
+} from "@/lib/store/api/categoryServices";
 import { categorySchema } from "@/lib/zod-schemas/category";
 import FormMaker from "@/components/molecules/forms/form-maker";
 
@@ -35,14 +39,16 @@ function CategoryForm({
   }, [edit, data]);
 
   return (
-    <div className="max-w-lg" data-testid="category-form">
+    <div data-testid="category-form" className="max-w-lg">
       <FormMaker<CategoryType>
         afterEndCallback={afterEndCallback}
         defaultValues={defaultValues}
-        createHook={useCreateCategoryMutation}
+        createHook={
+          edit && data ? useUpdateCategoryMutation : useCreateCategoryMutation
+        }
         schema={categorySchema}
         id={edit ? parentId : undefined}
-        debug={true}
+        entityName={"Category"}
       >
         <div>
           <RHFInput

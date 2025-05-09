@@ -2,15 +2,20 @@
 import { configureStore } from "@reduxjs/toolkit";
 import appReducer from "@/lib/store/features/app/appSlice";
 import { categoryApi } from "@/lib/store/api/categoryServices";
+import { productApi } from "@/lib/store/api/productServices";
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
       app: appReducer,
       [categoryApi.reducerPath]: categoryApi.reducer,
+      [productApi.reducerPath]: productApi.reducer,
     },
     middleware: (getDefaultMiddleware) =>
-      getDefaultMiddleware().concat(categoryApi.middleware),
+      getDefaultMiddleware().concat(
+        categoryApi.middleware,
+        productApi.middleware,
+      ),
     devTools: true,
   });
 };

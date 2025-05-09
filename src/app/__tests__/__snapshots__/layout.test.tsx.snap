@@ -10,12 +10,26 @@ exports[`RootLayout > renders the RootLayout component 1`] = `
       <div>
         Hi
       </div>
+      <section
+        aria-atomic="false"
+        aria-label="Notifications alt+T"
+        aria-live="polite"
+        aria-relevant="additions text"
+        tabindex="-1"
+      />
     </div>
   </body>,
   "container": <div>
     <div>
       Hi
     </div>
+    <section
+      aria-atomic="false"
+      aria-label="Notifications alt+T"
+      aria-live="polite"
+      aria-relevant="additions text"
+      tabindex="-1"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

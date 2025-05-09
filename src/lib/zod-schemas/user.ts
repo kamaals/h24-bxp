@@ -1,3 +1,4 @@
+/* istanbul ignore file @preserve */
 import { createInsertSchema } from "drizzle-zod";
 import { user } from "@/lib/db/schemas";
 

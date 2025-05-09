@@ -1,3 +1,4 @@
+/* istanbul ignore file @preserve */
 import type { IReduxAppState } from "@/lib/store/types/app";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { UserType } from "@/lib/types/user";

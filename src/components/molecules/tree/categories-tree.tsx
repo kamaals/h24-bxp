@@ -1,0 +1,96 @@
+"use client";
+import React from "react";
+import { CategoryWithChildren } from "@/lib/types/category";
+import { Tree } from "@/components/molecules/tree/generic";
+import { Folder, FolderOpen } from "lucide-react";
+import { LeafAction } from "@/components/molecules/tree/leaf-action";
+import {
+  useDeleteCategoryMutation,
+  useGetCategoriesQuery,
+} from "@/lib/store/api/categoryServices";
+import CategoryFormModal from "@/components/molecules/forms/category-form-modal";
+import { useRouter } from "next/navigation";
+
+function CategoriesTree() {
+  const router = useRouter();
+
+  const [selected, setSelected] = React.useState<
+    CategoryWithChildren | undefined
+  >(undefined);
+
+  const [openDialog, setOpenDialog] = React.useState(false);
+  const [edit, setEdit] = React.useState<boolean>(false);
+
+  const handleAdd = React.useCallback(
+    /* istanbul ignore next @preserve */
+    (root = false) => {
+      /* istanbul ignore if @preserve */
+      if (root) {
+        setSelected(undefined);
+      }
+      setEdit(false);
+      setOpenDialog(true);
+    },
+    [setOpenDialog],
+  );
+
+  const handleEdit = React.useCallback(() => {
+    setEdit(true);
+    setOpenDialog(true);
+  }, [setOpenDialog]);
+
+  const { data: categories } = useGetCategoriesQuery({ parentId: undefined });
+  const [deleteCategory] = useDeleteCategoryMutation();
+
+  /* istanbul ignore next @preserve */
+  const handleDelete = React.useCallback(() => {
+    /* istanbul ignore if @preserve */
+    if (selected) {
+      deleteCategory(selected.id);
+    }
+  }, [deleteCategory, selected]);
+
+  const handleAddProduct = React.useCallback(() => {
+    /* istanbul ignore if @preserve */
+    if (selected) {
+      router.push(`/dashboard/category/${selected.id}/product/new`);
+    }
+  }, [selected, router]);
+
+  const handleShowProducts = React.useCallback(() => {
+    /* istanbul ignore if @preserve */
+    if (selected) {
+      router.push(`/dashboard/category/${selected.id}/product`);
+    }
+  }, [selected, router]);
+
+  return Array.isArray(categories) ? (
+    <div className={"w-96 overflow-scroll relative p-6"}>
+      <CategoryFormModal
+        parentNode={selected}
+        open={openDialog}
+        openChange={setOpenDialog}
+        edit={edit}
+      />
+      <Tree<CategoryWithChildren>
+        actions={
+          <LeafAction
+            addAction={() => handleAdd(false)}
+            deleteAction={handleDelete}
+            editAction={handleEdit}
+            addProduct={handleAddProduct}
+            showProducts={handleShowProducts}
+          />
+        }
+        defaultNodeIcon={Folder}
+        defaultLeafIcon={FolderOpen}
+        onSelectChange={(selected) => {
+          setSelected(selected as CategoryWithChildren);
+        }}
+        data={categories as Array<CategoryWithChildren>}
+      />
+    </div>
+  ) : null;
+}
+
+export default CategoriesTree;

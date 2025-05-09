@@ -8,6 +8,7 @@ import {
 } from "drizzle-orm/pg-core";
 import category from "@/lib/db/schemas/category";
 import { relations } from "drizzle-orm";
+import productAttribute from "@/lib/db/schemas/product-attribute";
 
 const product = pgTable("product", {
   id: uuid("id").primaryKey().defaultRandom(),
@@ -20,11 +21,12 @@ const product = pgTable("product", {
   createdAt: timestamp("created_at").default(new Date()),
 });
 
-export const productRelation = relations(product, ({ one }) => ({
+export const productRelation = relations(product, ({ one, many }) => ({
   category: one(category, {
     fields: [product.categoryId],
     references: [category.id],
   }),
+  attributes: many(productAttribute),
 }));
 
 export default product;

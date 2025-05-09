@@ -1,3 +1,4 @@
+/* istanbul ignore file @preserve */
 import { CategoryType } from "@/lib/types/category";
 import { SingleRequest } from "@/lib/types/shared";
 

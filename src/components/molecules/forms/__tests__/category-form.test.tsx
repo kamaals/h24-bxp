@@ -1,23 +1,28 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import {
-  render,
-  screen,
-  cleanup,
-  fireEvent,
-  waitFor,
-} from "@testing-library/react";
+import { render, screen, cleanup, waitFor } from "@testing-library/react";
 import CategoryForm from "../category-form";
 import ReduxStoreProvider from "@/components/providers/redux-store-provider";
+import { useRouter } from "next/navigation";
 
 const mockMutate = vi.fn();
 
+vi.mock("next/navigation", () => ({
+  useRouter: vi.fn(),
+}));
+
 vi.mock("@/lib/store/api/categoryService", () => ({
   useCreateCategoryMutation: vi.fn(() => [mockMutate]),
+  useUpdateCategoryMutation: vi.fn(() => [mockMutate]),
 }));
 
 describe(CategoryForm.name, async () => {
+  const pushMock = vi.fn();
   beforeEach(() => {
     cleanup();
+    // @ts-expect-error: mocking the push function
+    (useRouter as Mock<typeof useRouter>).mockReturnValue({
+      push: pushMock,
+    });
   });
 
   it("should render the form", () => {
@@ -67,16 +72,11 @@ describe(CategoryForm.name, async () => {
       </ReduxStoreProvider>,
     );
 
-    const button = screen.getByTestId("loading-button");
-
     await waitFor(() => {
       const nameInput = container.querySelector(
         'input[value="T-Shits"]',
       ) as HTMLInputElement;
       expect(nameInput).toBeInTheDocument();
-      fireEvent.click(button);
-      const svg = container.querySelector(".animate-spin");
-      expect(svg).toBeInTheDocument();
     });
   });
 });

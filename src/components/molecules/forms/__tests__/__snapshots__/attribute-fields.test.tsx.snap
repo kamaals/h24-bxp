@@ -1,0 +1,2108 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RHFInput > should match the snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="space-y-2 mt-4"
+      >
+        <div
+          class="flex gap-2 mb-2 items-center"
+        >
+          <label
+            class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+            data-error="false"
+            data-slot="form-label"
+            for="undefined-form-item"
+          >
+            Attributes
+          </label>
+          <button
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 px-4 py-2 has-[>svg]:px-3 h-7"
+            data-slot="button"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-plus"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 12h14"
+              />
+              <path
+                d="M12 5v14"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="flex gap-2 items-end p-3 bg-slate-50 rounded-lg -mx-1"
+        >
+          <div
+            class="flex gap-2"
+          >
+            <div
+              class="grid gap-2"
+              data-slot="form-item"
+            >
+              <div>
+                <label
+                  class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                  data-error="false"
+                  data-slot="form-label"
+                  for="«r0»-form-item"
+                >
+                  Type
+                </label>
+                <p
+                  class="text-muted-foreground text-xs"
+                  data-slot="form-description"
+                  id="«r0»-form-item-description"
+                />
+              </div>
+              <div
+                aria-describedby="«r0»-form-item-description"
+                aria-invalid="false"
+                class="space-y-1 mt-0.5"
+                data-slot="form-control"
+                id="«r0»-form-item"
+              >
+                <button
+                  aria-autocomplete="none"
+                  aria-controls="radix-«r1»"
+                  aria-expanded="false"
+                  class="border-input data-[placeholder]:text-muted-foreground [&_svg:not([class*='text-'])]:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 dark:hover:bg-input/50 flex items-center justify-between gap-2 rounded-md border bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-[180px]"
+                  data-size="default"
+                  data-slot="select-trigger"
+                  data-state="closed"
+                  dir="ltr"
+                  role="combobox"
+                  type="button"
+                >
+                  <span
+                    data-slot="select-value"
+                    style="pointer-events: none;"
+                  >
+                    Text
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-chevron-down size-4 opacity-50"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m6 9 6 6 6-6"
+                    />
+                  </svg>
+                </button>
+                <span
+                  class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+                />
+              </div>
+            </div>
+            <div
+              class="grid gap-2"
+              data-slot="form-item"
+            >
+              <div>
+                <label
+                  class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                  data-error="false"
+                  data-slot="form-label"
+                  for="«r2»-form-item"
+                >
+                  Code
+                </label>
+                <p
+                  class="text-muted-foreground text-xs"
+                  data-slot="form-description"
+                  id="«r2»-form-item-description"
+                  style="margin-top: -.125rem;"
+                />
+              </div>
+              <div
+                aria-describedby="«r2»-form-item-description"
+                aria-invalid="false"
+                class="space-y-1"
+                data-slot="form-control"
+                id="«r2»-form-item"
+              >
+                <input
+                  class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                  data-slot="input"
+                  data-testid="attributes[0].code"
+                  name="attributes[0].code"
+                  value="value"
+                />
+                <span
+                  class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+                />
+              </div>
+            </div>
+            <div
+              class="grid gap-2"
+              data-slot="form-item"
+            >
+              <div>
+                <label
+                  class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                  data-error="false"
+                  data-slot="form-label"
+                  for="«r3»-form-item"
+                >
+                  Code
+                </label>
+                <p
+                  class="text-muted-foreground text-xs"
+                  data-slot="form-description"
+                  id="«r3»-form-item-description"
+                  style="margin-top: -.125rem;"
+                />
+              </div>
+              <div
+                aria-describedby="«r3»-form-item-description"
+                aria-invalid="false"
+                class="space-y-1"
+                data-slot="form-control"
+                id="«r3»-form-item"
+              >
+                <input
+                  class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                  data-slot="input"
+                  data-testid="attributes[0].name"
+                  name="attributes[0].name"
+                  type="text"
+                  value="name"
+                />
+                <span
+                  class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            aria-label="Confirm"
+            class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-destructive shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 text-white mb-1"
+            data-slot="button"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-trash2 lucide-trash-2"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 6h18"
+              />
+              <path
+                d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+              />
+              <path
+                d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+              />
+              <line
+                x1="10"
+                x2="10"
+                y1="11"
+                y2="17"
+              />
+              <line
+                x1="14"
+                x2="14"
+                y1="11"
+                y2="17"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="flex gap-2 items-end p-3 bg-slate-50 rounded-lg -mx-1"
+        >
+          <div
+            class="flex gap-2"
+          >
+            <div
+              class="grid gap-2"
+              data-slot="form-item"
+            >
+              <div>
+                <label
+                  class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                  data-error="false"
+                  data-slot="form-label"
+                  for="«r4»-form-item"
+                >
+                  Type
+                </label>
+                <p
+                  class="text-muted-foreground text-xs"
+                  data-slot="form-description"
+                  id="«r4»-form-item-description"
+                />
+              </div>
+              <div
+                aria-describedby="«r4»-form-item-description"
+                aria-invalid="false"
+                class="space-y-1 mt-0.5"
+                data-slot="form-control"
+                id="«r4»-form-item"
+              >
+                <button
+                  aria-autocomplete="none"
+                  aria-controls="radix-«r5»"
+                  aria-expanded="false"
+                  class="border-input data-[placeholder]:text-muted-foreground [&_svg:not([class*='text-'])]:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 dark:hover:bg-input/50 flex items-center justify-between gap-2 rounded-md border bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-[180px]"
+                  data-size="default"
+                  data-slot="select-trigger"
+                  data-state="closed"
+                  dir="ltr"
+                  role="combobox"
+                  type="button"
+                >
+                  <span
+                    data-slot="select-value"
+                    style="pointer-events: none;"
+                  >
+                    URL
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-chevron-down size-4 opacity-50"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m6 9 6 6 6-6"
+                    />
+                  </svg>
+                </button>
+                <span
+                  class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+                />
+              </div>
+            </div>
+            <div
+              class="grid gap-2"
+              data-slot="form-item"
+            >
+              <div>
+                <label
+                  class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                  data-error="false"
+                  data-slot="form-label"
+                  for="«r6»-form-item"
+                >
+                  Code
+                </label>
+                <p
+                  class="text-muted-foreground text-xs"
+                  data-slot="form-description"
+                  id="«r6»-form-item-description"
+                  style="margin-top: -.125rem;"
+                />
+              </div>
+              <div
+                aria-describedby="«r6»-form-item-description"
+                aria-invalid="false"
+                class="space-y-1"
+                data-slot="form-control"
+                id="«r6»-form-item"
+              >
+                <input
+                  class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                  data-slot="input"
+                  data-testid="attributes[1].code"
+                  name="attributes[1].code"
+                  value="value"
+                />
+                <span
+                  class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+                />
+              </div>
+            </div>
+            <div
+              class="grid gap-2"
+              data-slot="form-item"
+            >
+              <div>
+                <label
+                  class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                  data-error="false"
+                  data-slot="form-label"
+                  for="«r7»-form-item"
+                >
+                  Code
+                </label>
+                <p
+                  class="text-muted-foreground text-xs"
+                  data-slot="form-description"
+                  id="«r7»-form-item-description"
+                  style="margin-top: -.125rem;"
+                />
+              </div>
+              <div
+                aria-describedby="«r7»-form-item-description"
+                aria-invalid="false"
+                class="space-y-1"
+                data-slot="form-control"
+                id="«r7»-form-item"
+              >
+                <input
+                  class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                  data-slot="input"
+                  data-testid="attributes[1].name"
+                  name="attributes[1].name"
+                  type="text"
+                  value="name"
+                />
+                <span
+                  class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            aria-label="Confirm"
+            class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-destructive shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 text-white mb-1"
+            data-slot="button"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-trash2 lucide-trash-2"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 6h18"
+              />
+              <path
+                d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+              />
+              <path
+                d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+              />
+              <line
+                x1="10"
+                x2="10"
+                y1="11"
+                y2="17"
+              />
+              <line
+                x1="14"
+                x2="14"
+                y1="11"
+                y2="17"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="flex gap-2 items-end p-3 bg-slate-50 rounded-lg -mx-1"
+        >
+          <div
+            class="flex gap-2"
+          >
+            <div
+              class="grid gap-2"
+              data-slot="form-item"
+            >
+              <div>
+                <label
+                  class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                  data-error="false"
+                  data-slot="form-label"
+                  for="«r8»-form-item"
+                >
+                  Type
+                </label>
+                <p
+                  class="text-muted-foreground text-xs"
+                  data-slot="form-description"
+                  id="«r8»-form-item-description"
+                />
+              </div>
+              <div
+                aria-describedby="«r8»-form-item-description"
+                aria-invalid="false"
+                class="space-y-1 mt-0.5"
+                data-slot="form-control"
+                id="«r8»-form-item"
+              >
+                <button
+                  aria-autocomplete="none"
+                  aria-controls="radix-«r9»"
+                  aria-expanded="false"
+                  class="border-input data-[placeholder]:text-muted-foreground [&_svg:not([class*='text-'])]:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 dark:hover:bg-input/50 flex items-center justify-between gap-2 rounded-md border bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-[180px]"
+                  data-size="default"
+                  data-slot="select-trigger"
+                  data-state="closed"
+                  dir="ltr"
+                  role="combobox"
+                  type="button"
+                >
+                  <span
+                    data-slot="select-value"
+                    style="pointer-events: none;"
+                  >
+                    Number
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-chevron-down size-4 opacity-50"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m6 9 6 6 6-6"
+                    />
+                  </svg>
+                </button>
+                <span
+                  class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+                />
+              </div>
+            </div>
+            <div
+              class="grid gap-2"
+              data-slot="form-item"
+            >
+              <div>
+                <label
+                  class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                  data-error="false"
+                  data-slot="form-label"
+                  for="«ra»-form-item"
+                >
+                  Code
+                </label>
+                <p
+                  class="text-muted-foreground text-xs"
+                  data-slot="form-description"
+                  id="«ra»-form-item-description"
+                  style="margin-top: -.125rem;"
+                />
+              </div>
+              <div
+                aria-describedby="«ra»-form-item-description"
+                aria-invalid="false"
+                class="space-y-1"
+                data-slot="form-control"
+                id="«ra»-form-item"
+              >
+                <input
+                  class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                  data-slot="input"
+                  data-testid="attributes[2].code"
+                  name="attributes[2].code"
+                  value="PI"
+                />
+                <span
+                  class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+                />
+              </div>
+            </div>
+            <div
+              class="grid gap-2"
+              data-slot="form-item"
+            >
+              <div>
+                <label
+                  class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                  data-error="false"
+                  data-slot="form-label"
+                  for="«rb»-form-item"
+                >
+                  Code
+                </label>
+                <p
+                  class="text-muted-foreground text-xs"
+                  data-slot="form-description"
+                  id="«rb»-form-item-description"
+                  style="margin-top: -.125rem;"
+                />
+              </div>
+              <div
+                aria-describedby="«rb»-form-item-description"
+                aria-invalid="false"
+                class="space-y-1"
+                data-slot="form-control"
+                id="«rb»-form-item"
+              >
+                <input
+                  class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                  data-slot="input"
+                  data-testid="attributes[2].name"
+                  name="attributes[2].name"
+                  type="text"
+                  value="12"
+                />
+                <span
+                  class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            aria-label="Confirm"
+            class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-destructive shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 text-white mb-1"
+            data-slot="button"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-trash2 lucide-trash-2"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 6h18"
+              />
+              <path
+                d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+              />
+              <path
+                d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+              />
+              <line
+                x1="10"
+                x2="10"
+                y1="11"
+                y2="17"
+              />
+              <line
+                x1="14"
+                x2="14"
+                y1="11"
+                y2="17"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="flex gap-2 items-end p-3 bg-slate-50 rounded-lg -mx-1"
+        >
+          <div
+            class="flex gap-2"
+          >
+            <div
+              class="grid gap-2"
+              data-slot="form-item"
+            >
+              <div>
+                <label
+                  class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                  data-error="false"
+                  data-slot="form-label"
+                  for="«rc»-form-item"
+                >
+                  Type
+                </label>
+                <p
+                  class="text-muted-foreground text-xs"
+                  data-slot="form-description"
+                  id="«rc»-form-item-description"
+                />
+              </div>
+              <div
+                aria-describedby="«rc»-form-item-description"
+                aria-invalid="false"
+                class="space-y-1 mt-0.5"
+                data-slot="form-control"
+                id="«rc»-form-item"
+              >
+                <button
+                  aria-autocomplete="none"
+                  aria-controls="radix-«rd»"
+                  aria-expanded="false"
+                  class="border-input data-[placeholder]:text-muted-foreground [&_svg:not([class*='text-'])]:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 dark:hover:bg-input/50 flex items-center justify-between gap-2 rounded-md border bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-[180px]"
+                  data-size="default"
+                  data-slot="select-trigger"
+                  data-state="closed"
+                  dir="ltr"
+                  role="combobox"
+                  type="button"
+                >
+                  <span
+                    data-slot="select-value"
+                    style="pointer-events: none;"
+                  >
+                    Boolean
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-chevron-down size-4 opacity-50"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m6 9 6 6 6-6"
+                    />
+                  </svg>
+                </button>
+                <span
+                  class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+                />
+              </div>
+            </div>
+            <div
+              class="grid gap-2"
+              data-slot="form-item"
+            >
+              <div>
+                <label
+                  class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                  data-error="false"
+                  data-slot="form-label"
+                  for="«re»-form-item"
+                >
+                  Code
+                </label>
+                <p
+                  class="text-muted-foreground text-xs"
+                  data-slot="form-description"
+                  id="«re»-form-item-description"
+                  style="margin-top: -.125rem;"
+                />
+              </div>
+              <div
+                aria-describedby="«re»-form-item-description"
+                aria-invalid="false"
+                class="space-y-1"
+                data-slot="form-control"
+                id="«re»-form-item"
+              >
+                <input
+                  class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                  data-slot="input"
+                  data-testid="attributes[3].code"
+                  name="attributes[3].code"
+                  value="AVAIL"
+                />
+                <span
+                  class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+                />
+              </div>
+            </div>
+            <div
+              class="grid gap-2"
+              data-slot="form-item"
+            >
+              <div>
+                <label
+                  class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                  data-error="false"
+                  data-slot="form-label"
+                  for="«rf»-form-item"
+                >
+                  Code
+                </label>
+                <p
+                  class="text-muted-foreground text-xs"
+                  data-slot="form-description"
+                  id="«rf»-form-item-description"
+                  style="margin-top: -.125rem;"
+                />
+              </div>
+              <div
+                aria-describedby="«rf»-form-item-description"
+                aria-invalid="false"
+                class="space-y-1"
+                data-slot="form-control"
+                id="«rf»-form-item"
+              >
+                <input
+                  class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                  data-slot="input"
+                  data-testid="attributes[3].name"
+                  name="attributes[3].name"
+                  type="text"
+                  value="true"
+                />
+                <span
+                  class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            aria-label="Confirm"
+            class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-destructive shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 text-white mb-1"
+            data-slot="button"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-trash2 lucide-trash-2"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 6h18"
+              />
+              <path
+                d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+              />
+              <path
+                d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+              />
+              <line
+                x1="10"
+                x2="10"
+                y1="11"
+                y2="17"
+              />
+              <line
+                x1="14"
+                x2="14"
+                y1="11"
+                y2="17"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="flex gap-2 items-end p-3 bg-slate-50 rounded-lg -mx-1"
+        >
+          <div
+            class="flex gap-2"
+          >
+            <div
+              class="grid gap-2"
+              data-slot="form-item"
+            >
+              <div>
+                <label
+                  class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                  data-error="false"
+                  data-slot="form-label"
+                  for="«rg»-form-item"
+                >
+                  Type
+                </label>
+                <p
+                  class="text-muted-foreground text-xs"
+                  data-slot="form-description"
+                  id="«rg»-form-item-description"
+                />
+              </div>
+              <div
+                aria-describedby="«rg»-form-item-description"
+                aria-invalid="false"
+                class="space-y-1 mt-0.5"
+                data-slot="form-control"
+                id="«rg»-form-item"
+              >
+                <button
+                  aria-autocomplete="none"
+                  aria-controls="radix-«rh»"
+                  aria-expanded="false"
+                  class="border-input data-[placeholder]:text-muted-foreground [&_svg:not([class*='text-'])]:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 dark:hover:bg-input/50 flex items-center justify-between gap-2 rounded-md border bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-[180px]"
+                  data-size="default"
+                  data-slot="select-trigger"
+                  data-state="closed"
+                  dir="ltr"
+                  role="combobox"
+                  type="button"
+                >
+                  <span
+                    data-slot="select-value"
+                    style="pointer-events: none;"
+                  >
+                    Tag
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-chevron-down size-4 opacity-50"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m6 9 6 6 6-6"
+                    />
+                  </svg>
+                </button>
+                <span
+                  class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+                />
+              </div>
+            </div>
+            <div
+              class="grid gap-2"
+              data-slot="form-item"
+            >
+              <div>
+                <label
+                  class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                  data-error="false"
+                  data-slot="form-label"
+                  for="«ri»-form-item"
+                >
+                  Code
+                </label>
+                <p
+                  class="text-muted-foreground text-xs"
+                  data-slot="form-description"
+                  id="«ri»-form-item-description"
+                  style="margin-top: -.125rem;"
+                />
+              </div>
+              <div
+                aria-describedby="«ri»-form-item-description"
+                aria-invalid="false"
+                class="space-y-1"
+                data-slot="form-control"
+                id="«ri»-form-item"
+              >
+                <input
+                  class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                  data-slot="input"
+                  data-testid="attributes[4].code"
+                  name="attributes[4].code"
+                  value="value"
+                />
+                <span
+                  class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+                />
+              </div>
+            </div>
+            <div
+              class="grid gap-2"
+              data-slot="form-item"
+            >
+              <div>
+                <label
+                  class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                  data-error="false"
+                  data-slot="form-label"
+                  for="«rj»-form-item"
+                >
+                  Code
+                </label>
+                <p
+                  class="text-muted-foreground text-xs"
+                  data-slot="form-description"
+                  id="«rj»-form-item-description"
+                  style="margin-top: -.125rem;"
+                />
+              </div>
+              <div
+                aria-describedby="«rj»-form-item-description"
+                aria-invalid="false"
+                class="space-y-1"
+                data-slot="form-control"
+                id="«rj»-form-item"
+              >
+                <input
+                  class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                  data-slot="input"
+                  data-testid="attributes[4].name"
+                  name="attributes[4].name"
+                  type="text"
+                  value="name"
+                />
+                <span
+                  class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            aria-label="Confirm"
+            class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-destructive shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 text-white mb-1"
+            data-slot="button"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-trash2 lucide-trash-2"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 6h18"
+              />
+              <path
+                d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+              />
+              <path
+                d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+              />
+              <line
+                x1="10"
+                x2="10"
+                y1="11"
+                y2="17"
+              />
+              <line
+                x1="14"
+                x2="14"
+                y1="11"
+                y2="17"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="space-y-2 mt-4"
+    >
+      <div
+        class="flex gap-2 mb-2 items-center"
+      >
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+          data-error="false"
+          data-slot="form-label"
+          for="undefined-form-item"
+        >
+          Attributes
+        </label>
+        <button
+          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 px-4 py-2 has-[>svg]:px-3 h-7"
+          data-slot="button"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-plus"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5 12h14"
+            />
+            <path
+              d="M12 5v14"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="flex gap-2 items-end p-3 bg-slate-50 rounded-lg -mx-1"
+      >
+        <div
+          class="flex gap-2"
+        >
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <div>
+              <label
+                class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                data-error="false"
+                data-slot="form-label"
+                for="«r0»-form-item"
+              >
+                Type
+              </label>
+              <p
+                class="text-muted-foreground text-xs"
+                data-slot="form-description"
+                id="«r0»-form-item-description"
+              />
+            </div>
+            <div
+              aria-describedby="«r0»-form-item-description"
+              aria-invalid="false"
+              class="space-y-1 mt-0.5"
+              data-slot="form-control"
+              id="«r0»-form-item"
+            >
+              <button
+                aria-autocomplete="none"
+                aria-controls="radix-«r1»"
+                aria-expanded="false"
+                class="border-input data-[placeholder]:text-muted-foreground [&_svg:not([class*='text-'])]:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 dark:hover:bg-input/50 flex items-center justify-between gap-2 rounded-md border bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-[180px]"
+                data-size="default"
+                data-slot="select-trigger"
+                data-state="closed"
+                dir="ltr"
+                role="combobox"
+                type="button"
+              >
+                <span
+                  data-slot="select-value"
+                  style="pointer-events: none;"
+                >
+                  Text
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-chevron-down size-4 opacity-50"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+              <span
+                class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+              />
+            </div>
+          </div>
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <div>
+              <label
+                class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                data-error="false"
+                data-slot="form-label"
+                for="«r2»-form-item"
+              >
+                Code
+              </label>
+              <p
+                class="text-muted-foreground text-xs"
+                data-slot="form-description"
+                id="«r2»-form-item-description"
+                style="margin-top: -.125rem;"
+              />
+            </div>
+            <div
+              aria-describedby="«r2»-form-item-description"
+              aria-invalid="false"
+              class="space-y-1"
+              data-slot="form-control"
+              id="«r2»-form-item"
+            >
+              <input
+                class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                data-slot="input"
+                data-testid="attributes[0].code"
+                name="attributes[0].code"
+                value="value"
+              />
+              <span
+                class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+              />
+            </div>
+          </div>
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <div>
+              <label
+                class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                data-error="false"
+                data-slot="form-label"
+                for="«r3»-form-item"
+              >
+                Code
+              </label>
+              <p
+                class="text-muted-foreground text-xs"
+                data-slot="form-description"
+                id="«r3»-form-item-description"
+                style="margin-top: -.125rem;"
+              />
+            </div>
+            <div
+              aria-describedby="«r3»-form-item-description"
+              aria-invalid="false"
+              class="space-y-1"
+              data-slot="form-control"
+              id="«r3»-form-item"
+            >
+              <input
+                class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                data-slot="input"
+                data-testid="attributes[0].name"
+                name="attributes[0].name"
+                type="text"
+                value="name"
+              />
+              <span
+                class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          aria-label="Confirm"
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-destructive shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 text-white mb-1"
+          data-slot="button"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-trash2 lucide-trash-2"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 6h18"
+            />
+            <path
+              d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+            />
+            <path
+              d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+            />
+            <line
+              x1="10"
+              x2="10"
+              y1="11"
+              y2="17"
+            />
+            <line
+              x1="14"
+              x2="14"
+              y1="11"
+              y2="17"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="flex gap-2 items-end p-3 bg-slate-50 rounded-lg -mx-1"
+      >
+        <div
+          class="flex gap-2"
+        >
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <div>
+              <label
+                class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                data-error="false"
+                data-slot="form-label"
+                for="«r4»-form-item"
+              >
+                Type
+              </label>
+              <p
+                class="text-muted-foreground text-xs"
+                data-slot="form-description"
+                id="«r4»-form-item-description"
+              />
+            </div>
+            <div
+              aria-describedby="«r4»-form-item-description"
+              aria-invalid="false"
+              class="space-y-1 mt-0.5"
+              data-slot="form-control"
+              id="«r4»-form-item"
+            >
+              <button
+                aria-autocomplete="none"
+                aria-controls="radix-«r5»"
+                aria-expanded="false"
+                class="border-input data-[placeholder]:text-muted-foreground [&_svg:not([class*='text-'])]:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 dark:hover:bg-input/50 flex items-center justify-between gap-2 rounded-md border bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-[180px]"
+                data-size="default"
+                data-slot="select-trigger"
+                data-state="closed"
+                dir="ltr"
+                role="combobox"
+                type="button"
+              >
+                <span
+                  data-slot="select-value"
+                  style="pointer-events: none;"
+                >
+                  URL
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-chevron-down size-4 opacity-50"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+              <span
+                class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+              />
+            </div>
+          </div>
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <div>
+              <label
+                class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                data-error="false"
+                data-slot="form-label"
+                for="«r6»-form-item"
+              >
+                Code
+              </label>
+              <p
+                class="text-muted-foreground text-xs"
+                data-slot="form-description"
+                id="«r6»-form-item-description"
+                style="margin-top: -.125rem;"
+              />
+            </div>
+            <div
+              aria-describedby="«r6»-form-item-description"
+              aria-invalid="false"
+              class="space-y-1"
+              data-slot="form-control"
+              id="«r6»-form-item"
+            >
+              <input
+                class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                data-slot="input"
+                data-testid="attributes[1].code"
+                name="attributes[1].code"
+                value="value"
+              />
+              <span
+                class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+              />
+            </div>
+          </div>
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <div>
+              <label
+                class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                data-error="false"
+                data-slot="form-label"
+                for="«r7»-form-item"
+              >
+                Code
+              </label>
+              <p
+                class="text-muted-foreground text-xs"
+                data-slot="form-description"
+                id="«r7»-form-item-description"
+                style="margin-top: -.125rem;"
+              />
+            </div>
+            <div
+              aria-describedby="«r7»-form-item-description"
+              aria-invalid="false"
+              class="space-y-1"
+              data-slot="form-control"
+              id="«r7»-form-item"
+            >
+              <input
+                class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                data-slot="input"
+                data-testid="attributes[1].name"
+                name="attributes[1].name"
+                type="text"
+                value="name"
+              />
+              <span
+                class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          aria-label="Confirm"
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-destructive shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 text-white mb-1"
+          data-slot="button"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-trash2 lucide-trash-2"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 6h18"
+            />
+            <path
+              d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+            />
+            <path
+              d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+            />
+            <line
+              x1="10"
+              x2="10"
+              y1="11"
+              y2="17"
+            />
+            <line
+              x1="14"
+              x2="14"
+              y1="11"
+              y2="17"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="flex gap-2 items-end p-3 bg-slate-50 rounded-lg -mx-1"
+      >
+        <div
+          class="flex gap-2"
+        >
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <div>
+              <label
+                class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                data-error="false"
+                data-slot="form-label"
+                for="«r8»-form-item"
+              >
+                Type
+              </label>
+              <p
+                class="text-muted-foreground text-xs"
+                data-slot="form-description"
+                id="«r8»-form-item-description"
+              />
+            </div>
+            <div
+              aria-describedby="«r8»-form-item-description"
+              aria-invalid="false"
+              class="space-y-1 mt-0.5"
+              data-slot="form-control"
+              id="«r8»-form-item"
+            >
+              <button
+                aria-autocomplete="none"
+                aria-controls="radix-«r9»"
+                aria-expanded="false"
+                class="border-input data-[placeholder]:text-muted-foreground [&_svg:not([class*='text-'])]:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 dark:hover:bg-input/50 flex items-center justify-between gap-2 rounded-md border bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-[180px]"
+                data-size="default"
+                data-slot="select-trigger"
+                data-state="closed"
+                dir="ltr"
+                role="combobox"
+                type="button"
+              >
+                <span
+                  data-slot="select-value"
+                  style="pointer-events: none;"
+                >
+                  Number
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-chevron-down size-4 opacity-50"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+              <span
+                class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+              />
+            </div>
+          </div>
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <div>
+              <label
+                class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                data-error="false"
+                data-slot="form-label"
+                for="«ra»-form-item"
+              >
+                Code
+              </label>
+              <p
+                class="text-muted-foreground text-xs"
+                data-slot="form-description"
+                id="«ra»-form-item-description"
+                style="margin-top: -.125rem;"
+              />
+            </div>
+            <div
+              aria-describedby="«ra»-form-item-description"
+              aria-invalid="false"
+              class="space-y-1"
+              data-slot="form-control"
+              id="«ra»-form-item"
+            >
+              <input
+                class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                data-slot="input"
+                data-testid="attributes[2].code"
+                name="attributes[2].code"
+                value="PI"
+              />
+              <span
+                class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+              />
+            </div>
+          </div>
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <div>
+              <label
+                class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                data-error="false"
+                data-slot="form-label"
+                for="«rb»-form-item"
+              >
+                Code
+              </label>
+              <p
+                class="text-muted-foreground text-xs"
+                data-slot="form-description"
+                id="«rb»-form-item-description"
+                style="margin-top: -.125rem;"
+              />
+            </div>
+            <div
+              aria-describedby="«rb»-form-item-description"
+              aria-invalid="false"
+              class="space-y-1"
+              data-slot="form-control"
+              id="«rb»-form-item"
+            >
+              <input
+                class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                data-slot="input"
+                data-testid="attributes[2].name"
+                name="attributes[2].name"
+                type="text"
+                value="12"
+              />
+              <span
+                class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          aria-label="Confirm"
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-destructive shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 text-white mb-1"
+          data-slot="button"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-trash2 lucide-trash-2"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 6h18"
+            />
+            <path
+              d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+            />
+            <path
+              d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+            />
+            <line
+              x1="10"
+              x2="10"
+              y1="11"
+              y2="17"
+            />
+            <line
+              x1="14"
+              x2="14"
+              y1="11"
+              y2="17"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="flex gap-2 items-end p-3 bg-slate-50 rounded-lg -mx-1"
+      >
+        <div
+          class="flex gap-2"
+        >
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <div>
+              <label
+                class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                data-error="false"
+                data-slot="form-label"
+                for="«rc»-form-item"
+              >
+                Type
+              </label>
+              <p
+                class="text-muted-foreground text-xs"
+                data-slot="form-description"
+                id="«rc»-form-item-description"
+              />
+            </div>
+            <div
+              aria-describedby="«rc»-form-item-description"
+              aria-invalid="false"
+              class="space-y-1 mt-0.5"
+              data-slot="form-control"
+              id="«rc»-form-item"
+            >
+              <button
+                aria-autocomplete="none"
+                aria-controls="radix-«rd»"
+                aria-expanded="false"
+                class="border-input data-[placeholder]:text-muted-foreground [&_svg:not([class*='text-'])]:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 dark:hover:bg-input/50 flex items-center justify-between gap-2 rounded-md border bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-[180px]"
+                data-size="default"
+                data-slot="select-trigger"
+                data-state="closed"
+                dir="ltr"
+                role="combobox"
+                type="button"
+              >
+                <span
+                  data-slot="select-value"
+                  style="pointer-events: none;"
+                >
+                  Boolean
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-chevron-down size-4 opacity-50"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+              <span
+                class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+              />
+            </div>
+          </div>
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <div>
+              <label
+                class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                data-error="false"
+                data-slot="form-label"
+                for="«re»-form-item"
+              >
+                Code
+              </label>
+              <p
+                class="text-muted-foreground text-xs"
+                data-slot="form-description"
+                id="«re»-form-item-description"
+                style="margin-top: -.125rem;"
+              />
+            </div>
+            <div
+              aria-describedby="«re»-form-item-description"
+              aria-invalid="false"
+              class="space-y-1"
+              data-slot="form-control"
+              id="«re»-form-item"
+            >
+              <input
+                class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                data-slot="input"
+                data-testid="attributes[3].code"
+                name="attributes[3].code"
+                value="AVAIL"
+              />
+              <span
+                class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+              />
+            </div>
+          </div>
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <div>
+              <label
+                class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                data-error="false"
+                data-slot="form-label"
+                for="«rf»-form-item"
+              >
+                Code
+              </label>
+              <p
+                class="text-muted-foreground text-xs"
+                data-slot="form-description"
+                id="«rf»-form-item-description"
+                style="margin-top: -.125rem;"
+              />
+            </div>
+            <div
+              aria-describedby="«rf»-form-item-description"
+              aria-invalid="false"
+              class="space-y-1"
+              data-slot="form-control"
+              id="«rf»-form-item"
+            >
+              <input
+                class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                data-slot="input"
+                data-testid="attributes[3].name"
+                name="attributes[3].name"
+                type="text"
+                value="true"
+              />
+              <span
+                class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          aria-label="Confirm"
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-destructive shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 text-white mb-1"
+          data-slot="button"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-trash2 lucide-trash-2"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 6h18"
+            />
+            <path
+              d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+            />
+            <path
+              d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+            />
+            <line
+              x1="10"
+              x2="10"
+              y1="11"
+              y2="17"
+            />
+            <line
+              x1="14"
+              x2="14"
+              y1="11"
+              y2="17"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="flex gap-2 items-end p-3 bg-slate-50 rounded-lg -mx-1"
+      >
+        <div
+          class="flex gap-2"
+        >
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <div>
+              <label
+                class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                data-error="false"
+                data-slot="form-label"
+                for="«rg»-form-item"
+              >
+                Type
+              </label>
+              <p
+                class="text-muted-foreground text-xs"
+                data-slot="form-description"
+                id="«rg»-form-item-description"
+              />
+            </div>
+            <div
+              aria-describedby="«rg»-form-item-description"
+              aria-invalid="false"
+              class="space-y-1 mt-0.5"
+              data-slot="form-control"
+              id="«rg»-form-item"
+            >
+              <button
+                aria-autocomplete="none"
+                aria-controls="radix-«rh»"
+                aria-expanded="false"
+                class="border-input data-[placeholder]:text-muted-foreground [&_svg:not([class*='text-'])]:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 dark:hover:bg-input/50 flex items-center justify-between gap-2 rounded-md border bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-[180px]"
+                data-size="default"
+                data-slot="select-trigger"
+                data-state="closed"
+                dir="ltr"
+                role="combobox"
+                type="button"
+              >
+                <span
+                  data-slot="select-value"
+                  style="pointer-events: none;"
+                >
+                  Tag
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-chevron-down size-4 opacity-50"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+              <span
+                class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+              />
+            </div>
+          </div>
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <div>
+              <label
+                class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                data-error="false"
+                data-slot="form-label"
+                for="«ri»-form-item"
+              >
+                Code
+              </label>
+              <p
+                class="text-muted-foreground text-xs"
+                data-slot="form-description"
+                id="«ri»-form-item-description"
+                style="margin-top: -.125rem;"
+              />
+            </div>
+            <div
+              aria-describedby="«ri»-form-item-description"
+              aria-invalid="false"
+              class="space-y-1"
+              data-slot="form-control"
+              id="«ri»-form-item"
+            >
+              <input
+                class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                data-slot="input"
+                data-testid="attributes[4].code"
+                name="attributes[4].code"
+                value="value"
+              />
+              <span
+                class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+              />
+            </div>
+          </div>
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <div>
+              <label
+                class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+                data-error="false"
+                data-slot="form-label"
+                for="«rj»-form-item"
+              >
+                Code
+              </label>
+              <p
+                class="text-muted-foreground text-xs"
+                data-slot="form-description"
+                id="«rj»-form-item-description"
+                style="margin-top: -.125rem;"
+              />
+            </div>
+            <div
+              aria-describedby="«rj»-form-item-description"
+              aria-invalid="false"
+              class="space-y-1"
+              data-slot="form-control"
+              id="«rj»-form-item"
+            >
+              <input
+                class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                data-slot="input"
+                data-testid="attributes[4].name"
+                name="attributes[4].name"
+                type="text"
+                value="name"
+              />
+              <span
+                class="inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          aria-label="Confirm"
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-destructive shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 text-white mb-1"
+          data-slot="button"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-trash2 lucide-trash-2"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 6h18"
+            />
+            <path
+              d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+            />
+            <path
+              d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+            />
+            <line
+              x1="10"
+              x2="10"
+              y1="11"
+              y2="17"
+            />
+            <line
+              x1="14"
+              x2="14"
+              y1="11"
+              y2="17"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

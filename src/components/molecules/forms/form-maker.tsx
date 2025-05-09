@@ -2,7 +2,6 @@ import React from "react";
 import { ZodSchema } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-
 import type {
   AsyncDefaultValues,
   DefaultValues,
@@ -17,6 +16,7 @@ import { GenericMutationType } from "@/lib/types/form";
 type Props<K> = {
   createHook: GenericMutationType;
   schema: ZodSchema;
+  entityName: string;
   defaultValues: DefaultValues<K> | AsyncDefaultValues<K>;
   children: React.ReactNode;
   afterSuccessCallback?: (response: K) => void;
@@ -34,6 +34,7 @@ function FormMaker<EntityType extends FieldValues = FieldValues>({
   afterSuccessCallback,
   id,
   debug,
+  entityName,
 }: Props<EntityType>) {
   const [loading, setLoading] = React.useState(false);
 
@@ -55,9 +56,13 @@ function FormMaker<EntityType extends FieldValues = FieldValues>({
     try {
       const response = await create(id ? { ...data, id } : { ...data });
       afterSuccessCallback?.(response as EntityType);
+      toast.error(`${entityName} ${id ? "updated" : "added"}`);
     } catch (e: unknown) {
-      // @ts-expect-error: is string
-      toast.error(e?.message ?? "Error");
+      toast.error(
+        // @ts-expect-error: is string
+        e?.message ??
+          `${entityName} ${id ? "update failed" : "creation failed"}`,
+      );
     } finally {
       setTimeout(() => {
         setLoading(false);

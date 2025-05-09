@@ -10,7 +10,14 @@ function LoadingButton({
   ...props
 }: ButtonProps & { loading: boolean }) {
   return (
-    <Button {...props} disabled={loading} data-testid="loading-button">
+    <Button
+      className={
+        "bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white shadow-3xl"
+      }
+      {...props}
+      disabled={loading}
+      data-testid="loading-button"
+    >
       <span className={"font-bold"}>{children}</span>
       {loading ? (
         <span className="ml-4">

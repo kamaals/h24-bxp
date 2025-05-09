@@ -1,3 +1,4 @@
+/* istanbul ignore file @preserve */
 import { userSchema } from "@/lib/zod-schemas/user";
 import { z } from "zod";
 

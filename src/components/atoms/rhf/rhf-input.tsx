@@ -50,7 +50,15 @@ function RHFInput({
                 {...props}
                 data-testid={name}
               />
-              {!!error ? <FormMessage>{error.message}</FormMessage> : null}
+              {!!error ? (
+                <FormMessage>{error.message}</FormMessage>
+              ) : (
+                <span
+                  className={
+                    "inline-block h-2 bg-emerald-300 w-2 ml-1 rounded-full"
+                  }
+                ></span>
+              )}
             </div>
           </FormControl>
         </FormItem>
