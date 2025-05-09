@@ -21,6 +21,14 @@ export async function getCategoryTree(
   if (maxDepth <= 0) return [];
 
   const categories = (await db.query.category.findMany({
+    with: {
+      products: {
+        columns: {
+          name: true,
+          id: true,
+        },
+      },
+    },
     where:
       parentId === null
         ? (category, { isNull }) => isNull(category.parentId)

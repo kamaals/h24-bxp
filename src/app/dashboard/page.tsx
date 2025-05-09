@@ -1,11 +1,9 @@
 /* istanbul ignore file @preserve */
-import Logout from "@/components/molecules/auth/logout";
-function Page() {
-  return (
-    <div>
-      Hello <Logout />
-    </div>
-  );
+
+import CategoriesTree from "@/components/molecules/tree/categories-tree";
+import React from "react";
+async function Page() {
+  return <CategoriesTree />;
 }
 
 export default Page;
