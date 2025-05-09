@@ -44,55 +44,65 @@ export const createProductWithAttributes = async (req: NextRequest) => {
 };
 
 export async function getAllProductsByCategoryId(id: string) {
-  const db = connectDB() as DB;
-  const products = await db.query.product.findMany({
-    where: (product) => eq(product.categoryId, id),
-    with: {
-      attributes: {
-        columns: {
-          name: true,
-          type: true,
-          code: true,
-          id: true,
+  try {
+    const db = connectDB() as DB;
+    const products = await db.query.product.findMany({
+      where: (product) => eq(product.categoryId, id),
+      with: {
+        attributes: {
+          columns: {
+            name: true,
+            type: true,
+            code: true,
+            id: true,
+          },
         },
       },
-    },
-    columns: {
-      id: true,
-      name: true,
-      categoryId: true,
-    },
-  });
+      columns: {
+        id: true,
+        name: true,
+        categoryId: true,
+      },
+    });
 
-  return products;
+    return products;
+  } catch (e) {
+    console.log(e);
+    return [];
+  }
 }
 
 export async function getProductById(id: string) {
-  const db = connectDB() as DB;
-  const products = await db.query.product.findFirst({
-    where: (product) => eq(product.id, id),
-    with: {
-      category: {
-        columns: {
-          name: true,
-          id: true,
+  try {
+    const db = connectDB() as DB;
+    const product = await db.query.product.findFirst({
+      where: (product) => eq(product.id, id),
+      with: {
+        category: {
+          columns: {
+            name: true,
+            id: true,
+          },
+        },
+        attributes: {
+          columns: {
+            name: true,
+            type: true,
+            code: true,
+            id: true,
+          },
         },
       },
-      attributes: {
-        columns: {
-          name: true,
-          type: true,
-          code: true,
-          id: true,
-        },
+      columns: {
+        id: true,
+        name: true,
+        categoryId: true,
       },
-    },
-    columns: {
-      id: true,
-      name: true,
-      categoryId: true,
-    },
-  });
+    });
 
-  return products;
+    return product;
+  } catch (e) {
+    console.log(e);
+    return [];
+  }
 }
