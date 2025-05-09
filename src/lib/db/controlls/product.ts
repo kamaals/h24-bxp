@@ -72,6 +72,12 @@ export async function getProductById(id: string) {
   const products = await db.query.product.findFirst({
     where: (product) => eq(product.id, id),
     with: {
+      category: {
+        columns: {
+          name: true,
+          id: true,
+        },
+      },
       attributes: {
         columns: {
           name: true,

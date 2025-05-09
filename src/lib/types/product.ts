@@ -3,6 +3,7 @@ import {
   productSchema,
   attributeSchema,
   productWithAttributesSchema,
+  productWithAttributesAndCategorySchema,
 } from "@/lib/zod-schemas/product";
 import { Doc } from "@/lib/types/shared";
 import { z } from "zod";
@@ -10,6 +11,9 @@ import { z } from "zod";
 export type ProductType = z.infer<typeof productSchema>;
 export type ProductWithAttributesType = z.infer<
   typeof productWithAttributesSchema
+>;
+export type ProductWithAttbutesAndCategoryType = z.infer<
+  typeof productWithAttributesAndCategorySchema
 >;
 export type ProductDocType = ProductType &
   Doc & { attributes: Array<AttributeDocType> };

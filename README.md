@@ -74,7 +74,6 @@
 - [ ] Setup Test
   - [x] Add jest
   - [x] Add React testing library
-  - [] Add supertest
   - [x] Add Istanbul
   - [x] Add coverage
-  - [] Add Husky precommit
+  - [ ] Add Husky precommit
