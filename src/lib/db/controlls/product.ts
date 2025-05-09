@@ -66,3 +66,27 @@ export async function getAllProductsByCategoryId(id: string) {
 
   return products;
 }
+
+export async function getProductById(id: string) {
+  const db = connectDB() as DB;
+  const products = await db.query.product.findFirst({
+    where: (product) => eq(product.id, id),
+    with: {
+      attributes: {
+        columns: {
+          name: true,
+          type: true,
+          code: true,
+          id: true,
+        },
+      },
+    },
+    columns: {
+      id: true,
+      name: true,
+      categoryId: true,
+    },
+  });
+
+  return products;
+}
