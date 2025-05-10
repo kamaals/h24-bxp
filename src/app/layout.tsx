@@ -8,6 +8,7 @@ import { Toaster } from "@/components/atoms/sonner";
 const geistSans = Sunflower({
   variable: "--font-sunflower",
   weight: ["300", "500", "700"],
+  subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
