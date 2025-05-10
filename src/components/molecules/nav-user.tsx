@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronsUpDown, LogOut } from "lucide-react";
+import { ChevronsUpDown } from "lucide-react";
 
 import { Avatar, AvatarImage } from "@/components/atoms/avatar";
 import {
@@ -18,6 +18,8 @@ import {
   useSidebar,
 } from "@/components/molecules/sidebar";
 import { useAppSelector } from "@/lib/store/hooks";
+import Logout from "@/components/molecules/auth/logout";
+import React from "react";
 
 export function NavUser() {
   const { isMobile } = useSidebar();
@@ -40,7 +42,7 @@ export function NavUser() {
               </Avatar>
               <div className="grid flex-1 text-left text-sm leading-tight">
                 <span className="truncate font-semibold">
-                  {currentUser ? currentUser.name : "User"}
+                  {currentUser ? currentUser.name : "John Doe"}
                 </span>
                 <span className="truncate text-xs">
                   {currentUser && currentUser.email
@@ -77,8 +79,7 @@ export function NavUser() {
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
-              <LogOut />
-              <div>Log out</div>
+              <Logout />
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

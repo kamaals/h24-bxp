@@ -24,7 +24,7 @@ export default function Login() {
   const [rememberMe, setRememberMe] = useState(false);
 
   return (
-    <Card className="max-w-sm w-full relative overflow-hidden shadow-md">
+    <Card className="max-w-sm w-full relative overflow-hidden shadow-md mt-8">
       <CardHeader>
         <CardTitle className="text-lg md:text-xl">
           <h4>Sign In</h4>

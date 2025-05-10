@@ -26,7 +26,7 @@ function Register() {
   const [loading, setLoading] = useState(false);
 
   return (
-    <Card className="z-50 rounded-md rounded-t-none max-w-md">
+    <Card className="z-50 rounded-md rounded-t-none max-w-md mt-8">
       <CardHeader>
         <CardTitle className="text-lg md:text-xl">Sign Up</CardTitle>
         <CardDescription className="text-xs md:text-sm">
@@ -97,9 +97,7 @@ function Register() {
               placeholder="Confirm Password"
             />
           </div>
-          <div className="grid gap-2">
-            <Label htmlFor="image">Profile Image (optional)</Label>
-          </div>
+
           <Button
             type="submit"
             className="w-full"

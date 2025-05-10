@@ -1,18 +1,17 @@
 import React from "react";
-import Link from "next/link";
+import Greeting, { GreetingMenu } from "@/components/molecules/greeting";
 
 export default function Home() {
   return (
-    <section>
-      <h1>Welcome!</h1>
+    <section className={"container mx-auto max-w-xl p-5 space-y-10"}>
       <header>
-        <Link href={"/dashboard"}>Dash</Link>
-        <Link href={"/login"}>Login</Link>
+        <nav>
+          <GreetingMenu />
+        </nav>
       </header>
       <main>
-        <p>Hello and welcome!</p>
+        <Greeting />
       </main>
-      <footer>Hi</footer>
     </section>
   );
 }
