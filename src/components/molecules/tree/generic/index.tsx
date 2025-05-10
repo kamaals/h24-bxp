@@ -3,6 +3,7 @@ import React from "react";
 import { cva } from "class-variance-authority";
 import { useTree } from "@/lib/hooks/use-tree";
 import TreeItem from "./tree-item";
+import { cn } from "@/lib/utils";
 
 export interface TreeDataItem {
   id: string;
@@ -69,11 +70,17 @@ export const selectedTreeVariants = cva(
   "before:opacity-100 before:bg-white text-accent-foreground before:z-10",
 );
 
-export const verticalLIne =
-  "relative vertical-line  before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4";
+const wireColors = ["before:border-slate-300", "after:border-slate-300"];
 
-export const horizontalLIne =
-  "relative horizontal-line after:absolute  after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:w-4 after:h-4 after:border-b after:z-100";
+export const verticalLIne = cn(
+  `relative vertical-line before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4`,
+  wireColors[0],
+);
+
+export const horizontalLIne = cn(
+  "relative horizontal-line after:absolute  after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:w-4 after:h-4 after:border-b after:z-100",
+  wireColors[1],
+);
 
 export const iconLine =
   "relative transition-left duration-200 after:absolute after:top-11 after:bottom-0 after:left-4 after:w-1  after:border-l group-data-[state=closed]:after:border-l-0";

@@ -1,6 +1,6 @@
 import React from "react";
 import { SidebarNavItem } from "@/components/molecules/sidebar-menu/sidebar-menu";
-import { SidebarMenuButton } from "@/components/atoms/sidebar";
+import { SidebarMenuButton } from "@/components/molecules/sidebar";
 import Link from "next/link";
 import { DropdownMenuItem } from "@/components/atoms/dropdown-menu";
 type Props = {

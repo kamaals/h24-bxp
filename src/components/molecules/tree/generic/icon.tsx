@@ -27,10 +27,12 @@ function TreeIcon<DataItem extends TreeDataItem>({
     Icon = data.icon;
   }
   return Icon ? (
-    <Icon
-      data-testid={testId}
-      className="h-4 w-4 shrink-0 mr-2 relative z-20"
-    />
+    <span>
+      <Icon
+        data-testid={testId}
+        className="h-4 w-4 shrink-0 mr-2 relative z-20"
+      />
+    </span>
   ) : (
     <></>
   );

@@ -1,5 +1,8 @@
 import React from "react";
-import { SidebarMenuButton, SidebarMenuItem } from "@/components/atoms/sidebar";
+import {
+  SidebarMenuButton,
+  SidebarMenuItem,
+} from "@/components/molecules/sidebar";
 import {
   Collapsible,
   CollapsibleContent,

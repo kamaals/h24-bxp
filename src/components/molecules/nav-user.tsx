@@ -16,7 +16,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
-} from "@/components/atoms/sidebar";
+} from "@/components/molecules/sidebar";
 import { useAppSelector } from "@/lib/store/hooks";
 
 export function NavUser() {

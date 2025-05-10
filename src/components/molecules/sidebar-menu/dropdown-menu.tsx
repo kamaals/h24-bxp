@@ -11,7 +11,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/atoms/dropdown-menu";
 import Link from "next/link";
-import { SidebarMenuButton } from "@/components/atoms/sidebar";
+import { SidebarMenuButton } from "@/components/molecules/sidebar";
 import { SidebarNavItem } from "@/components/molecules/sidebar-menu/sidebar-menu";
 
 import { DropdownMenuProps } from "@radix-ui/react-dropdown-menu";

@@ -1,8 +1,12 @@
 import React from "react";
 import type { LucideIcon } from "lucide-react";
-import { SidebarGroup, SidebarGroupLabel } from "@/components/atoms/sidebar";
+import {
+  SidebarGroup,
+  SidebarGroupLabel,
+} from "@/components/molecules/sidebar";
 import MenuItem from "@/components/molecules/sidebar-menu/menu-item";
 import { DynamicDropdownMenu } from "@/components/molecules/sidebar-menu/sidebar-dropdown";
+import CategoriesTree from "@/components/molecules/tree/categories-tree";
 
 export type SidebarNavItem = {
   title?: string;
@@ -22,7 +26,7 @@ function SidebarMainMenu({ label, items }: Props) {
     <SidebarGroup>
       <SidebarGroupLabel>{label}</SidebarGroupLabel>
       <MenuItem level={0} items={items ? items : []} />
-      <DynamicDropdownMenu data={items ?? []} />
+      <CategoriesTree />
     </SidebarGroup>
   );
 }

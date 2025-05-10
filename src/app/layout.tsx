@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Sunflower } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import ReduxStoreProvider from "@/components/providers/redux-store-provider";
 import { Toaster } from "@/components/atoms/sonner";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const geistSans = Sunflower({
+  variable: "--font-sunflower",
+  weight: ["300", "500", "700"],
 });
 
 const geistMono = Geist_Mono({
@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <ReduxStoreProvider user={null}>
         <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans`}
         >
           {children}
           <Toaster />

@@ -1,0 +1,5 @@
+ALTER TABLE "category" ALTER COLUMN "created_at" SET DEFAULT '2025-05-10 06:00:34.649';--> statement-breakpoint
+ALTER TABLE "product" ALTER COLUMN "description" SET DEFAULT 'Nunc eget diam lacinia, fringilla justo sit amet, sodales nisl. Mauris nec tincidunt eros, vitae pulvinar ligula. Etiam pretium mollis odio, id pharetra odio mattis sit amet. Nullam sem mi, ornare nec pretium sed, porttitor eu elit. Morbi pharetra ante ac lorem dictum sodales. Fusce ac pellentesque massa. ';--> statement-breakpoint
+ALTER TABLE "product" ALTER COLUMN "created_at" SET DEFAULT '2025-05-10 06:00:34.648';--> statement-breakpoint
+ALTER TABLE "product_attribute" ALTER COLUMN "created_at" SET DEFAULT '2025-05-10 06:00:34.648';--> statement-breakpoint
+ALTER TABLE "product" ADD COLUMN "price" text DEFAULT '1050';

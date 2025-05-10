@@ -24,3 +24,20 @@ export const productWithAttributesAndCategorySchema = productSchema.extend({
   attributes: array(attributeSchema.extend({ id: string() })).optional(),
   category: categorySchema.extend({ id: string() }),
 });
+
+export const productWithCategoryAndAttributeResponseSchema =
+  productSchema.extend({
+    id: string(),
+    category: object({
+      name: string(),
+      id: string(),
+    }),
+    attributes: array(
+      object({
+        name: string(),
+        type: string(),
+        code: string(),
+        id: string(),
+      }),
+    ).optional(),
+  });

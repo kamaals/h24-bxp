@@ -2,7 +2,7 @@ import React from "react";
 import { SidebarNavItem } from "@/components/molecules/sidebar-menu/sidebar-menu";
 import CollapsibleMenu from "@/components/molecules/sidebar-menu/collapsible-menu";
 import Leaf from "@/components/molecules/sidebar-menu/leaf";
-import { SidebarMenu } from "@/components/atoms/sidebar";
+import { SidebarMenu } from "@/components/molecules/sidebar";
 import { cn } from "@/lib/utils";
 
 type Props = {

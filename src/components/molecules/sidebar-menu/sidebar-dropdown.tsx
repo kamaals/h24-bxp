@@ -13,7 +13,7 @@ import {
   DropdownMenuPortal,
 } from "@/components/atoms/dropdown-menu";
 import { SidebarNavItem } from "@/components/molecules/sidebar-menu/sidebar-menu";
-import { SidebarMenuButton } from "@/components/atoms/sidebar";
+import { SidebarMenuButton } from "@/components/molecules/sidebar";
 import { cn } from "@/lib/utils";
 // Function to recursively render menu items
 const renderMenuItems = (items: SidebarNavItem[]) => {

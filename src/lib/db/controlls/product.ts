@@ -7,13 +7,28 @@ import { ReasonPhrases, StatusCodes } from "http-status-codes";
 import { DB } from "@/lib/types/db";
 import { eq } from "drizzle-orm";
 
+function getRandomIntInclusive(min: number, max: number) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
 export const createProductWithAttributes = async (req: NextRequest) => {
   try {
     const db = connectDB();
     const { attributes, ..._product } = (await req.json()) as ProductType & {
       attributes: Array<AttributeType>;
     };
-    const productResp = await db?.insert(product).values(_product).returning();
+    const productResp = await db
+      ?.insert(product)
+      .values({
+        ..._product,
+        photo: [
+          `https://picsum.photos/id/${getRandomIntInclusive(10, 200)}/400/300`,
+        ],
+        price: `${getRandomIntInclusive(1000, 50000)}`,
+      })
+      .returning();
     const productId = productResp?.[0]?.id;
     const attributesWithProductId = (attributes || []).map((attr) => ({
       ...attr,
@@ -44,33 +59,38 @@ export const createProductWithAttributes = async (req: NextRequest) => {
 };
 
 export async function getAllProductsByCategoryId(id: string) {
-  try {
-    const db = connectDB() as DB;
-    const products = await db.query.product.findMany({
-      where: (product) => eq(product.categoryId, id),
-      with: {
-        attributes: {
-          columns: {
-            name: true,
-            type: true,
-            code: true,
-            id: true,
-          },
+  const db = connectDB() as DB;
+  const products = await db.query.product.findMany({
+    where: (product) => eq(product.categoryId, id),
+    with: {
+      category: {
+        columns: {
+          name: true,
+          id: true,
         },
       },
-      columns: {
-        id: true,
-        name: true,
-        categoryId: true,
+      attributes: {
+        columns: {
+          name: true,
+          type: true,
+          code: true,
+          id: true,
+        },
       },
-    });
+    },
+    columns: {
+      id: true,
+      name: true,
+      categoryId: true,
+      price: true,
+      photo: true,
+      description: true,
+    },
+  });
 
-    return products;
-  } catch (e) {
-    console.log(e);
-    return [];
-  }
+  return products;
 }
+
 
 export async function getProductById(id: string) {
   try {

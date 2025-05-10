@@ -1,5 +1,8 @@
 import React from "react";
-import { SidebarMenuButton, SidebarMenuItem } from "@/components/atoms/sidebar";
+import {
+  SidebarMenuButton,
+  SidebarMenuItem,
+} from "@/components/molecules/sidebar";
 import { SidebarNavItem } from "@/components/molecules/sidebar-menu/sidebar-menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";

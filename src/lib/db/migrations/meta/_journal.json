@@ -43,6 +43,20 @@
       "when": 1746800862995,
       "tag": "0005_cheerful_morph",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1746856834670,
+      "tag": "0006_broad_sentinel",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1746865429280,
+      "tag": "0007_smiling_frog_thor",
+      "breakpoints": true
     }
   ]
 }

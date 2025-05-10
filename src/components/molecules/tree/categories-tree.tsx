@@ -5,6 +5,14 @@ import { Tree } from "@/components/molecules/tree/generic";
 import { Folder, FolderOpen } from "lucide-react";
 import { LeafAction } from "@/components/molecules/tree/leaf-action";
 import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardFooter,
+} from "@/components/atoms/card";
+import {
   useDeleteCategoryMutation,
   useGetCategoriesQuery,
 } from "@/lib/store/api/categoryServices";
@@ -65,31 +73,41 @@ function CategoriesTree() {
   }, [selected, router]);
 
   return Array.isArray(categories) ? (
-    <div className={"w-96 overflow-scroll relative p-6"}>
-      <CategoryFormModal
-        parentNode={selected}
-        open={openDialog}
-        openChange={setOpenDialog}
-        edit={edit}
-      />
-      <Tree<CategoryWithChildren>
-        actions={
-          <LeafAction
-            addAction={() => handleAdd(false)}
-            deleteAction={handleDelete}
-            editAction={handleEdit}
-            addProduct={handleAddProduct}
-            showProducts={handleShowProducts}
-          />
-        }
-        defaultNodeIcon={Folder}
-        defaultLeafIcon={FolderOpen}
-        onSelectChange={(selected) => {
-          setSelected(selected as CategoryWithChildren);
-        }}
-        data={categories as Array<CategoryWithChildren>}
-      />
-    </div>
+    <Card
+      className={
+        'overflow-scroll relative group-data-[state="collapsed"]:hidden border-0 shadow-none bg-sidebar'
+      }
+    >
+      <CardHeader>Categories Tree</CardHeader>
+      <CardContent>
+        <CategoryFormModal
+          parentNode={selected}
+          open={openDialog}
+          openChange={setOpenDialog}
+          edit={edit}
+        />
+        <Tree<CategoryWithChildren>
+          actions={
+            <LeafAction
+              addAction={() => handleAdd(false)}
+              deleteAction={handleDelete}
+              editAction={handleEdit}
+              addProduct={handleAddProduct}
+              showProducts={handleShowProducts}
+            />
+          }
+          defaultNodeIcon={Folder}
+          defaultLeafIcon={FolderOpen}
+          onSelectChange={(selected) => {
+            const _selected = selected as CategoryWithChildren;
+            setSelected(_selected);
+            router.push(`/dashboard/category/${_selected.id}/product`);
+          }}
+          data={categories as Array<CategoryWithChildren>}
+        />
+      </CardContent>
+      <CardFooter></CardFooter>
+    </Card>
   ) : null;
 }
 
