@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Sunflower } from "next/font/google";
+import { Geist_Mono, Sunflower } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import ReduxStoreProvider from "@/components/providers/redux-store-provider";

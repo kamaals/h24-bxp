@@ -33,7 +33,7 @@ function DashboardLayout({
             {breadcrumb}
           </div>
         </header>
-        <section className={"p-6"}>{children}</section>
+        <section className={"p-6 pt-24"}>{children}</section>
       </SidebarInset>
     </SidebarProvider>
   );

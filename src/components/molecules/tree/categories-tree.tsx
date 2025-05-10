@@ -8,8 +8,6 @@ import {
   Card,
   CardContent,
   CardHeader,
-  CardTitle,
-  CardDescription,
   CardFooter,
 } from "@/components/atoms/card";
 import {

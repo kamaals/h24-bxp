@@ -5,7 +5,6 @@ import {
   SidebarGroupLabel,
 } from "@/components/molecules/sidebar";
 import MenuItem from "@/components/molecules/sidebar-menu/menu-item";
-import { DynamicDropdownMenu } from "@/components/molecules/sidebar-menu/sidebar-dropdown";
 import CategoriesTree from "@/components/molecules/tree/categories-tree";
 
 export type SidebarNavItem = {

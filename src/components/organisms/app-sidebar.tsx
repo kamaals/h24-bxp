@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { User, Home, Plus, List } from "lucide-react";
+import { Home } from "lucide-react";
 import { NavUser } from "@/components/molecules/nav-user";
 import {
   Sidebar,
@@ -11,9 +11,7 @@ import {
   SidebarRail,
 } from "@/components/molecules/sidebar";
 import { usePathname } from "next/navigation";
-
 import SidebarMainMenu from "@/components/molecules/sidebar-menu/sidebar-menu";
-import CategoriesTree from "@/components/molecules/tree/categories-tree";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const pathname = usePathname();

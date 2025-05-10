@@ -5,7 +5,7 @@ import { vi } from "vitest";
 
 vi.mock("next/font/google", () => ({
   // no-unused-vars
-  Geist: vi.fn(() => ({
+  Sunflower: vi.fn(() => ({
     style: {
       fontFamily: "mocked",
     },

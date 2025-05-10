@@ -51,9 +51,14 @@ export function AttributeField({ index }: { index: number }) {
                 : "text"
           }
           name={`attributes[${index}].name`}
-          label={"Code"}
+          label={"Name"}
         />
       )}
+      <RHFInput
+        className={"hidden"}
+        name={`attributes[${index}].id`}
+        label={"ID"}
+      />
     </div>
   );
 }

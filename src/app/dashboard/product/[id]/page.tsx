@@ -1,13 +1,13 @@
 import React from "react";
 import { getProductById } from "@/lib/db/controlls/product";
 import Link from "next/link";
-import { ProductWithAttbutesAndCategoryType } from "@/lib/types/product";
+import { ProductWithCategoryAndAttributeResponseType } from "@/lib/types/product";
 
 async function Page({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const product = (await getProductById(
     id,
-  )) as ProductWithAttbutesAndCategoryType;
+  )) as ProductWithCategoryAndAttributeResponseType;
   return product ? (
     <article>
       <header>

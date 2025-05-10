@@ -12,8 +12,9 @@ export const productApi = createApi({
   tagTypes: ["Product", "id"],
   baseQuery: fetchBaseQuery({ baseUrl: "/api" }),
   endpoints: (builder) => ({
-    getProducts: builder.query<ProductsResponse, ProductsRequest | undefined>({
-      query: () => "/product",
+    getProducts: builder.query<ProductsResponse, ProductsRequest>({
+      query: (query) =>
+        `/product?order=name:${query.order.name},price:${query.order.price}&categoryId=${query.category}`,
       keepUnusedDataFor: 3600,
       providesTags: () => {
         return [{ type: "Product", id: "id" }];

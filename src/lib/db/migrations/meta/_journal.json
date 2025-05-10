@@ -5,57 +5,15 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1746598598355,
-      "tag": "0000_colorful_domino",
+      "when": 1746873411190,
+      "tag": "0000_grey_chronomancer",
       "breakpoints": true
     },
     {
       "idx": 1,
       "version": "7",
-      "when": 1746602496497,
-      "tag": "0001_outstanding_green_goblin",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1746780037491,
-      "tag": "0002_kind_prima",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "7",
-      "when": 1746799093176,
-      "tag": "0003_ambitious_johnny_blaze",
-      "breakpoints": true
-    },
-    {
-      "idx": 4,
-      "version": "7",
-      "when": 1746799384290,
-      "tag": "0004_smart_midnight",
-      "breakpoints": true
-    },
-    {
-      "idx": 5,
-      "version": "7",
-      "when": 1746800862995,
-      "tag": "0005_cheerful_morph",
-      "breakpoints": true
-    },
-    {
-      "idx": 6,
-      "version": "7",
-      "when": 1746856834670,
-      "tag": "0006_broad_sentinel",
-      "breakpoints": true
-    },
-    {
-      "idx": 7,
-      "version": "7",
-      "when": 1746865429280,
-      "tag": "0007_smiling_frog_thor",
+      "when": 1746874523432,
+      "tag": "0001_fixed_living_lightning",
       "breakpoints": true
     }
   ]
