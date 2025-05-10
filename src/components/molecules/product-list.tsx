@@ -10,7 +10,10 @@ import { useSidebar } from "@/components/molecules/sidebar";
 import { Button } from "@/components/atoms/button";
 import { Plus } from "lucide-react";
 import { useDispatch } from "react-redux";
-import { onOpenChangeProductModal } from "@/lib/store/features/app/appSlice";
+import {
+  onOpenChangeProductModal,
+  setSelectedProduct,
+} from "@/lib/store/features/app/appSlice";
 
 function ProductList({ categoryId }: { categoryId?: string }) {
   const { nameOrder, priceOrder, category } = useAppSelector(
@@ -34,6 +37,7 @@ function ProductList({ categoryId }: { categoryId?: string }) {
   }, [categoryId]);
 
   const handleAddProduct = React.useCallback(() => {
+    dispatch(setSelectedProduct(null));
     dispatch(onOpenChangeProductModal(true));
   }, [dispatch]);
 

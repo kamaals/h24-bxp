@@ -66,7 +66,7 @@ function RHFSelect({
                     }
                   }
                 >
-                  <SelectTrigger className="w-[180px]">
+                  <SelectTrigger className="w-[100px]">
                     <SelectValue
                       className={"select-value"}
                       placeholder={label}

@@ -100,7 +100,7 @@ export function AttributeFields() {
               type="button"
               variant="destructive"
               size="sm"
-              className="text-white mb-1"
+              className="text-white mb-8"
               aria-label="Confirm"
             >
               <Trash2 />

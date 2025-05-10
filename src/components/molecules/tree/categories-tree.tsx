@@ -20,6 +20,7 @@ import { useDispatch } from "react-redux";
 import {
   onOpenChangeProductModal,
   setCategory,
+  setSelectedProduct,
 } from "@/lib/store/features/app/appSlice";
 import { Button } from "@/components/atoms/button";
 
@@ -67,6 +68,7 @@ function CategoriesTree() {
   const handleAddProduct = React.useCallback(() => {
     /* istanbul ignore if @preserve */
     if (selected) {
+      dispatch(setSelectedProduct(null));
       dispatch(onOpenChangeProductModal(true));
     }
   }, [selected, dispatch]);
