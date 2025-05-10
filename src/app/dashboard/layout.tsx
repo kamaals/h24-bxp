@@ -9,6 +9,7 @@ import {
 } from "@/components/molecules/sidebar";
 import { Separator } from "@/components/atoms/separator";
 import { Metadata } from "next";
+import ProductFormModal from "@/components/molecules/forms/product-form-modal";
 
 export const metadata: Metadata = {
   title: "Backoffice",
@@ -33,6 +34,7 @@ function DashboardLayout({
             {breadcrumb}
           </div>
         </header>
+        <ProductFormModal />
         <section className={"p-6 pt-24"}>{children}</section>
       </SidebarInset>
     </SidebarProvider>

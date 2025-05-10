@@ -29,6 +29,7 @@ export function LeafAction({
   showProducts,
 }: Props) {
   const [isOpen, setOpen] = React.useState(false);
+
   return (
     <DropdownMenu open={isOpen} onOpenChange={setOpen}>
       <DropdownMenuTrigger asChild>

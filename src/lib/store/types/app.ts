@@ -9,4 +9,5 @@ export interface IReduxAppState {
   openProductModal: boolean;
   nameOrder: QueryOrder;
   priceOrder: QueryOrder;
+  categoryId: string | null;
 }

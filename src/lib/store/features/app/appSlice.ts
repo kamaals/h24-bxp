@@ -11,17 +11,14 @@ export const initialState: IReduxAppState = {
   openProductModal: false,
   nameOrder: "asc",
   priceOrder: "desc",
+  categoryId: null,
 };
 
 export const appSlice = createSlice({
   name: "app",
   initialState,
   reducers: {
-    /*
-     * TODO: Ned to implement later with BetterAuth Session/Cookie
-     */
     updateUser: (state, { payload }: PayloadAction<UserType | null>) => {
-      // Update the current user in the state
       state.currentUser = payload;
     },
 
@@ -45,6 +42,10 @@ export const appSlice = createSlice({
     setPriceOrder: (state, { payload }: PayloadAction<QueryOrder>) => {
       state.priceOrder = payload;
     },
+
+    setCategoryId: (state, { payload }: PayloadAction<string | null>) => {
+      state.categoryId = payload;
+    },
   },
 });
 
@@ -54,6 +55,7 @@ export const {
   onOpenChangeProductModal,
   setNameOrder,
   setPriceOrder,
+  setCategoryId,
 } = appSlice.actions;
 
 export default appSlice.reducer;

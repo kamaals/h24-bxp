@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { CategoryDocType } from "@/lib/types/category";
 import {
   Dialog,
   DialogContent,
@@ -13,17 +12,12 @@ import { onOpenChangeProductModal } from "@/lib/store/features/app/appSlice";
 import { useAppSelector } from "@/lib/store/hooks";
 import { ProductDocType } from "@/lib/types/product";
 
-function ProductFormModal({
-  parentNode,
-  edit,
-}: {
-  parentNode?: CategoryDocType;
-  edit?: boolean;
-}) {
+function ProductFormModal() {
   const dispatch = useDispatch();
 
   const open = useAppSelector((state) => state.app.openProductModal);
   const data = useAppSelector((state) => state.app.currentProduct);
+  const categoryId = useAppSelector((state) => state.app.categoryId);
 
   const openChange = React.useCallback(
     (open: boolean) => {
@@ -32,27 +26,23 @@ function ProductFormModal({
     [dispatch],
   );
 
-  return data ? (
+  return (
     <Dialog open={open} onOpenChange={openChange}>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>
-            {parentNode
-              ? edit
-                ? `Editing ${parentNode.name}`
-                : `Add new under: ${parentNode.name}`
-              : "Add New Capability"}
+            {data ? `Editing ${data.name}` : "Add New Product"}
           </DialogTitle>
         </DialogHeader>
         <ProductForm
-          categoryId={data.category.id}
-          edit={true}
+          categoryId={data ? data.category.id : (categoryId as string)}
+          edit={!!data}
           data={data as ProductDocType}
           afterEndCallback={() => openChange(false)}
         />
       </DialogContent>
     </Dialog>
-  ) : null;
+  );
 }
 
 export default ProductFormModal;

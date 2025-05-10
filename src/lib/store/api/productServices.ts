@@ -33,7 +33,7 @@ export const productApi = createApi({
         method: "POST",
         body: newProduct,
       }),
-      invalidatesTags: ["Product"],
+      invalidatesTags: ["Product", "id"],
     }),
     updateProduct: builder.mutation({
       query: ({ id, ...patch }) => ({
@@ -48,7 +48,7 @@ export const productApi = createApi({
         url: `/product/${id}`,
         method: "DELETE",
       }),
-      invalidatesTags: ["Product"],
+      invalidatesTags: ["Product", "id"],
     }),
   }),
 });

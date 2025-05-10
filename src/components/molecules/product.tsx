@@ -12,12 +12,17 @@ import {
   onOpenChangeProductModal,
   setSelectedProduct,
 } from "@/lib/store/features/app/appSlice";
+import ActionConfirm from "@/components/molecules/action-confirm/action-confirm";
+import { Edit } from "lucide-react";
+import { useDeleteProductMutation } from "@/lib/store/api/productServices";
 
 function Product({
   product,
 }: {
   product: ProductWithCategoryAndAttributeResponseType;
 }) {
+  const [deleteProduct] = useDeleteProductMutation();
+
   const dispatch = useDispatch();
 
   return (
@@ -71,14 +76,23 @@ function Product({
           <p className="text-md text-slate-500 mt-4">{product.description}</p>
         </section>
       </div>
-      <footer className="ml-auto">
+      <footer className="flex justify-between gap-2">
+        <div className="w-50">
+          <ActionConfirm
+            onConfirm={() => {
+              deleteProduct(product.id);
+            }}
+          />
+        </div>
         <Button
+          variant={"ghost"}
           onClick={() => {
             dispatch(setSelectedProduct(product));
             dispatch(onOpenChangeProductModal(true));
           }}
           type="button"
         >
+          <Edit />
           Edit
         </Button>
       </footer>

@@ -16,9 +16,16 @@ import {
 } from "@/lib/store/api/categoryServices";
 import CategoryFormModal from "@/components/molecules/forms/category-form-modal";
 import { useRouter } from "next/navigation";
+import { useDispatch } from "react-redux";
+import {
+  onOpenChangeProductModal,
+  setCategoryId,
+} from "@/lib/store/features/app/appSlice";
 
 function CategoriesTree() {
   const router = useRouter();
+
+  const dispatch = useDispatch();
 
   const [selected, setSelected] = React.useState<
     CategoryWithChildren | undefined
@@ -59,9 +66,9 @@ function CategoriesTree() {
   const handleAddProduct = React.useCallback(() => {
     /* istanbul ignore if @preserve */
     if (selected) {
-      router.push(`/dashboard/category/${selected.id}/product/new`);
+      dispatch(onOpenChangeProductModal(true));
     }
-  }, [selected, router]);
+  }, [selected, dispatch]);
 
   const handleShowProducts = React.useCallback(() => {
     /* istanbul ignore if @preserve */
@@ -99,6 +106,7 @@ function CategoriesTree() {
           onSelectChange={(selected) => {
             const _selected = selected as CategoryWithChildren;
             setSelected(_selected);
+            dispatch(setCategoryId(_selected.id));
             router.push(`/dashboard/category/${_selected.id}/product`);
           }}
           data={categories as Array<CategoryWithChildren>}
