@@ -2,7 +2,7 @@
 import React from "react";
 import { CategoryWithChildren } from "@/lib/types/category";
 import { Tree } from "@/components/molecules/tree/generic";
-import { Folder, FolderOpen } from "lucide-react";
+import { Folder, FolderOpen, Plus } from "lucide-react";
 import { LeafAction } from "@/components/molecules/tree/leaf-action";
 import {
   Card,
@@ -19,8 +19,9 @@ import { useRouter } from "next/navigation";
 import { useDispatch } from "react-redux";
 import {
   onOpenChangeProductModal,
-  setCategoryId,
+  setCategory,
 } from "@/lib/store/features/app/appSlice";
+import { Button } from "@/components/atoms/button";
 
 function CategoriesTree() {
   const router = useRouter();
@@ -91,6 +92,9 @@ function CategoriesTree() {
           openChange={setOpenDialog}
           edit={edit}
         />
+        <Button onClick={() => setOpenDialog(true)} type="button">
+          <Plus /> Add Root Category
+        </Button>
         <Tree<CategoryWithChildren>
           actions={
             <LeafAction
@@ -106,7 +110,7 @@ function CategoriesTree() {
           onSelectChange={(selected) => {
             const _selected = selected as CategoryWithChildren;
             setSelected(_selected);
-            dispatch(setCategoryId(_selected.id));
+            dispatch(setCategory(_selected));
             router.push(`/dashboard/category/${_selected.id}/product`);
           }}
           data={categories as Array<CategoryWithChildren>}

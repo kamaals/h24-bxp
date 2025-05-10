@@ -17,7 +17,7 @@ function ProductFormModal() {
 
   const open = useAppSelector((state) => state.app.openProductModal);
   const data = useAppSelector((state) => state.app.currentProduct);
-  const categoryId = useAppSelector((state) => state.app.categoryId);
+  const category = useAppSelector((state) => state.app.category);
 
   const openChange = React.useCallback(
     (open: boolean) => {
@@ -35,7 +35,7 @@ function ProductFormModal() {
           </DialogTitle>
         </DialogHeader>
         <ProductForm
-          categoryId={data ? data.category.id : (categoryId as string)}
+          categoryId={data ? data.category.id : (category?.id as string)}
           edit={!!data}
           data={data as ProductDocType}
           afterEndCallback={() => openChange(false)}

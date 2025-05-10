@@ -2,6 +2,7 @@
 import { UserType } from "@/lib/types/user";
 import { ProductWithCategoryAndAttributeResponseType } from "@/lib/types/product";
 import { QueryOrder } from "@/lib/store/types/product";
+import { CategoryWithChildren } from "@/lib/types/category";
 
 export interface IReduxAppState {
   currentUser: UserType | null;
@@ -9,5 +10,5 @@ export interface IReduxAppState {
   openProductModal: boolean;
   nameOrder: QueryOrder;
   priceOrder: QueryOrder;
-  categoryId: string | null;
+  category: CategoryWithChildren | null;
 }

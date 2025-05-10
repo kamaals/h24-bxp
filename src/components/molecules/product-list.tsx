@@ -13,7 +13,9 @@ import { useDispatch } from "react-redux";
 import { onOpenChangeProductModal } from "@/lib/store/features/app/appSlice";
 
 function ProductList({ categoryId }: { categoryId?: string }) {
-  const { nameOrder, priceOrder } = useAppSelector((state) => state.app);
+  const { nameOrder, priceOrder, category } = useAppSelector(
+    (state) => state.app,
+  );
 
   const { data } = useGetProductsQuery({
     category: categoryId,
@@ -40,7 +42,9 @@ function ProductList({ categoryId }: { categoryId?: string }) {
       <CardHeader>
         <div className={"flex justify-between items-center"}>
           <div className={"flex flex-col gap-2"}>
-            <h2 className="text-3xl font-bold">Products</h2>
+            <h2 className="text-3xl font-bold flex gap-2">
+              {category?.name ?? ""} / Products
+            </h2>
             <OrderTool />
           </div>
           <Button onClick={handleAddProduct} variant="ghost" type="button">

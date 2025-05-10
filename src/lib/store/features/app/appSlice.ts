@@ -4,6 +4,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { UserType } from "@/lib/types/user";
 import { ProductWithCategoryAndAttributeResponseType } from "@/lib/types/product";
 import { QueryOrder } from "@/lib/store/types/product";
+import { CategoryWithChildren } from "@/lib/types/category";
 
 export const initialState: IReduxAppState = {
   currentUser: null,
@@ -11,7 +12,7 @@ export const initialState: IReduxAppState = {
   openProductModal: false,
   nameOrder: "asc",
   priceOrder: "desc",
-  categoryId: null,
+  category: null,
 };
 
 export const appSlice = createSlice({
@@ -43,8 +44,11 @@ export const appSlice = createSlice({
       state.priceOrder = payload;
     },
 
-    setCategoryId: (state, { payload }: PayloadAction<string | null>) => {
-      state.categoryId = payload;
+    setCategory: (
+      state,
+      { payload }: PayloadAction<CategoryWithChildren | null>,
+    ) => {
+      state.category = payload;
     },
   },
 });
@@ -55,7 +59,7 @@ export const {
   onOpenChangeProductModal,
   setNameOrder,
   setPriceOrder,
-  setCategoryId,
+  setCategory,
 } = appSlice.actions;
 
 export default appSlice.reducer;
