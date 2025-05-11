@@ -3,6 +3,12 @@
 import React from "react";
 import PageTitle from "@/components/atoms/page-title";
 import CategoriesTree from "@/components/molecules/tree/categories-tree";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Categories List",
+  description: "Product CRUD Categories list",
+};
 
 async function Page() {
   return (

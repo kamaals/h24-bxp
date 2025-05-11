@@ -2,6 +2,12 @@
 
 import React from "react";
 import CategoriesTree from "@/components/molecules/tree/categories-tree";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Categories List",
+  description: "Product CRUD Categories list",
+};
 
 function CategoryPage() {
   return (

@@ -1,5 +1,11 @@
 import React from "react";
 import Greeting, { GreetingMenu } from "@/components/molecules/greeting";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Product CRUD",
+  description: "Product Hompage",
+};
 
 export default function Home() {
   return (
