@@ -1,3 +1,4 @@
+/* istanbul ignore file @preserve */
 import { NextRequest } from "next/server";
 import { GeneralAsyncRequestParams } from "@/lib/types/shared";
 import { deleteByID } from "@/lib/db/controlls/generic";

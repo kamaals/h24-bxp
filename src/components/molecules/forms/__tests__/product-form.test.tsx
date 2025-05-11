@@ -31,7 +31,7 @@ describe(ProductForm.name, async () => {
       </ReduxStoreProvider>,
     );
 
-    const form = screen.getByTestId("category-form");
+    const form = screen.getByTestId("product-form");
     expect(form).toBeInTheDocument();
   });
 
@@ -61,7 +61,7 @@ describe(ProductForm.name, async () => {
       </ReduxStoreProvider>,
     );
 
-    const form = screen.getByTestId("category-form");
+    const form = screen.getByTestId("product-form");
     expect(form).toBeInTheDocument();
   });
 });

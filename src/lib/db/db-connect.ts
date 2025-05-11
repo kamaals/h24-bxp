@@ -12,6 +12,6 @@ export const connectDB = () => {
     db = drizzle(env.DATABASE_URL, { schema }) as DB;
     return db;
   } catch (e) {
-    console.log(e);
+    console.error(e);
   }
 };

@@ -50,7 +50,6 @@ export const createProductWithAttributes = async (req: NextRequest) => {
       { status: StatusCodes.CREATED },
     );
   } catch (error) {
-    console.error("Error creating product with attributes:", error);
     return NextResponse.json({
       data: error,
       message: ReasonPhrases.INTERNAL_SERVER_ERROR,
@@ -101,7 +100,6 @@ export const updateProductWithAttributes = async (
       { status: StatusCodes.CREATED },
     );
   } catch (error) {
-    console.error("Error creating product with attributes:", error);
     return NextResponse.json({
       data: error,
       message: ReasonPhrases.INTERNAL_SERVER_ERROR,
@@ -241,12 +239,14 @@ export async function getProductById(id: string) {
         id: true,
         name: true,
         categoryId: true,
+        price: true,
+        photo: true,
+        description: true,
       },
     });
 
     return product;
   } catch (e) {
-    console.log(e);
     return [];
   }
 }

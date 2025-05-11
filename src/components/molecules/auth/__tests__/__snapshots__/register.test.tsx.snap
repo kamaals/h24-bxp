@@ -6,7 +6,7 @@ exports[`Register Component > renders the App component 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="bg-card text-card-foreground flex flex-col gap-6 border py-6 shadow-sm z-50 rounded-md rounded-t-none max-w-md"
+        class="bg-card text-card-foreground flex flex-col gap-6 border py-6 shadow-sm z-50 rounded-md rounded-t-none max-w-md mt-8"
         data-slot="card"
       >
         <div
@@ -136,17 +136,6 @@ exports[`Register Component > renders the App component 1`] = `
                 value=""
               />
             </div>
-            <div
-              class="grid gap-2"
-            >
-              <label
-                class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50"
-                data-slot="label"
-                for="image"
-              >
-                Profile Image (optional)
-              </label>
-            </div>
             <button
               class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3 w-full"
               data-slot="button"
@@ -161,7 +150,7 @@ exports[`Register Component > renders the App component 1`] = `
   </body>,
   "container": <div>
     <div
-      class="bg-card text-card-foreground flex flex-col gap-6 border py-6 shadow-sm z-50 rounded-md rounded-t-none max-w-md"
+      class="bg-card text-card-foreground flex flex-col gap-6 border py-6 shadow-sm z-50 rounded-md rounded-t-none max-w-md mt-8"
       data-slot="card"
     >
       <div
@@ -290,17 +279,6 @@ exports[`Register Component > renders the App component 1`] = `
               type="password"
               value=""
             />
-          </div>
-          <div
-            class="grid gap-2"
-          >
-            <label
-              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50"
-              data-slot="label"
-              for="image"
-            >
-              Profile Image (optional)
-            </label>
           </div>
           <button
             class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3 w-full"

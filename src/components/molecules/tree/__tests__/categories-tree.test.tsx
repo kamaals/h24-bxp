@@ -14,12 +14,14 @@ import {
   useDeleteCategoryMutation,
 } from "@/lib/store/api/categoryServices";
 import { useRouter } from "next/navigation";
+import ReduxStoreProvider from "@/components/providers/redux-store-provider";
 
 vi.mock("next/navigation", () => ({
   useRouter: vi.fn(),
 }));
 
-vi.mock("@/lib/store/api/categoryServices", () => ({
+vi.mock("@/lib/store/api/categoryServices", async (importOriginal) => ({
+  ...(await importOriginal()),
   useGetCategoriesQuery: vi.fn(),
   useDeleteCategoryMutation: vi.fn(),
 }));
@@ -67,7 +69,11 @@ describe("CategoriesTree Component", async () => {
   });
 
   it("renders categories when data is available", () => {
-    render(<CategoriesTree />);
+    render(
+      <ReduxStoreProvider user={null}>
+        <CategoriesTree />
+      </ReduxStoreProvider>,
+    );
     expect(screen.getByTestId("tree-leaf-1")).toBeInTheDocument();
   });
 
@@ -79,12 +85,20 @@ describe("CategoriesTree Component", async () => {
       error: null,
     });
 
-    const { container } = render(<CategoriesTree />);
+    const { container } = render(
+      <ReduxStoreProvider user={null}>
+        <CategoriesTree />
+      </ReduxStoreProvider>,
+    );
     expect(container.firstChild).toBeNull();
   });
 
   it("selects a category when clicked", () => {
-    render(<CategoriesTree />);
+    render(
+      <ReduxStoreProvider user={null}>
+        <CategoriesTree />
+      </ReduxStoreProvider>,
+    );
 
     fireEvent.click(screen.getByTestId("tree-leaf-1"));
     // The modal should not open on just selection
@@ -93,7 +107,11 @@ describe("CategoriesTree Component", async () => {
 
   it("opens add modal when add action is triggered", async () => {
     const user = userEvent.setup();
-    render(<CategoriesTree />);
+    render(
+      <ReduxStoreProvider user={null}>
+        <CategoriesTree />
+      </ReduxStoreProvider>,
+    );
     const treeActions = screen.getByTestId("tree-actions-1");
 
     // Simulate clicking the add button (assuming the first button is for adding)
@@ -109,7 +127,11 @@ describe("CategoriesTree Component", async () => {
 
   it("opens add modal when edit action is triggered", async () => {
     const user = userEvent.setup();
-    render(<CategoriesTree />);
+    render(
+      <ReduxStoreProvider user={null}>
+        <CategoriesTree />
+      </ReduxStoreProvider>,
+    );
     const treeActions = screen.getByTestId("tree-actions-1");
 
     // Simulate clicking the edit button (assuming the first button is for adding)

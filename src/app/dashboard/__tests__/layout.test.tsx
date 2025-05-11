@@ -2,6 +2,7 @@ import { describe, it, expect } from "vitest";
 import { render } from "@testing-library/react";
 import DashboardLayout from "../layout";
 import { vi } from "vitest";
+import ReduxStoreProvider from "@/components/providers/redux-store-provider";
 
 vi.mock("next/navigation", () => ({
   useRouter: vi.fn(),
@@ -15,9 +16,11 @@ vi.mock("@/lib/store/hooks", () => ({
 describe("Dashboard Layout ", () => {
   it("Should match the snapshot", () => {
     const result = render(
-      <DashboardLayout breadcrumb={<div>Breadcrumb</div>}>
-        <div>Test</div>
-      </DashboardLayout>,
+      <ReduxStoreProvider user={null}>
+        <DashboardLayout breadcrumb={<div>Breadcrumb</div>}>
+          <div>Test</div>
+        </DashboardLayout>
+      </ReduxStoreProvider>,
     );
     expect(result).toMatchSnapshot();
   });

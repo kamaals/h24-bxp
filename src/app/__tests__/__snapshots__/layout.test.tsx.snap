@@ -4,7 +4,7 @@ exports[`RootLayout > renders the RootLayout component 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body
-    class="undefined undefined antialiased"
+    class="undefined undefined antialiased font-sans"
   >
     <div>
       <div>

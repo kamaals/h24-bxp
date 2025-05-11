@@ -6,7 +6,7 @@ exports[`Login > Should match with snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 max-w-sm w-full relative overflow-hidden shadow-md"
+        class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 max-w-sm w-full relative overflow-hidden shadow-md mt-8"
         data-slot="card"
       >
         <div
@@ -126,7 +126,7 @@ exports[`Login > Should match with snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 max-w-sm w-full relative overflow-hidden shadow-md"
+      class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 max-w-sm w-full relative overflow-hidden shadow-md mt-8"
       data-slot="card"
     >
       <div

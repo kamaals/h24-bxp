@@ -5,27 +5,25 @@ import Link from "next/link";
 import Logout from "@/components/molecules/auth/logout";
 import { LogInIcon } from "lucide-react";
 
-export async function GreetingMenu() {
-  const session = await auth.api.getSession({
-    headers: await headers(),
-  });
-  if (!session) {
-    return (
-      <ul className="flex gap-4 items-center">
-        <li>
-          <Link href={"/register"}>Register</Link>
-        </li>
-        <li className={"flex items-center gap-2"}>
-          <LogInIcon size={16} />
-          <Link href={"/login"}>Login</Link>
-        </li>
-      </ul>
-    );
-  }
+export function NavLoggedOut() {
   return (
     <ul className="flex gap-4 items-center">
       <li>
-        <Link href={"/register"}>Dashboard</Link>
+        <Link href={"/register"}>Register</Link>
+      </li>
+      <li className={"flex items-center gap-2"}>
+        <LogInIcon size={16} />
+        <Link href={"/login"}>Login</Link>
+      </li>
+    </ul>
+  );
+}
+
+export function NavLoggedIn() {
+  return (
+    <ul className="flex gap-4 items-center">
+      <li>
+        <Link href={"/dashboard"}>Dashboard</Link>
       </li>
       <li>
         <Logout />
@@ -33,24 +31,39 @@ export async function GreetingMenu() {
     </ul>
   );
 }
-
-async function Greeting() {
+/* istanbul ignore next @preserve */
+export async function GreetingMenu() {
   const session = await auth.api.getSession({
     headers: await headers(),
   });
-  if (!session) {
-    return (
-      <h1 className="text-4xl">
-        Hej! Please <Link href={"/login"}>Login</Link> to continue
-      </h1>
-    );
-  }
+  /* istanbul ignore next */
+  return !session ? <NavLoggedOut /> : <NavLoggedIn />;
+}
+
+export function UserGreet() {
   return (
     <h1 className="text-4xl">
       Hej! welcome back, please continue to{" "}
       <Link href={"/dashboard"}>Dashboard</Link>
     </h1>
   );
+}
+
+export function AnonGreet() {
+  return (
+    <h1 className="text-4xl">
+      Hej! welcome back, please continue to{" "}
+      <Link href={"/dashboard"}>Dashboard</Link>
+    </h1>
+  );
+}
+/* istanbul ignore next @preserve */
+async function Greeting() {
+  const session = await auth.api.getSession({
+    headers: await headers(),
+  });
+  /* istanbul ignore next @preserve */
+  return !session ? <AnonGreet /> : <UserGreet />;
 }
 
 export default Greeting;

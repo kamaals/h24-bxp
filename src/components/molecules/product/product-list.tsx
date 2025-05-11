@@ -6,9 +6,9 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/atoms/card";
-import Product from "@/components/molecules/product";
+import Product from "@/components/molecules/product/product";
 import { useGetProductsQuery } from "@/lib/store/api/productServices";
-import OrderTool from "@/components/molecules/order-tool";
+import OrderTool from "@/components/molecules/product/order-tool";
 import { useAppSelector } from "@/lib/store/hooks";
 import { ProductWithCategoryAndAttributeResponseType } from "@/lib/types/product";
 import { useSidebar } from "@/components/molecules/sidebar";
@@ -21,7 +21,7 @@ import {
   setSelectedProduct,
   updatePaginationSetupWithCurrentLimit,
 } from "@/lib/store/features/app/appSlice";
-import ProductPagination from "@/components/molecules/product-pagination";
+import ProductPagination from "@/components/molecules/product/product-pagination";
 
 function ProductList({ categoryId }: { categoryId?: string }) {
   const dispatch = useDispatch();
@@ -47,7 +47,7 @@ function ProductList({ categoryId }: { categoryId?: string }) {
     };
 
     if (categoryId && !category) {
-      fetchCategory().catch(console.log);
+      fetchCategory().catch(console.error);
     }
   }, [categoryId, category, dispatch]);
 
@@ -65,8 +65,6 @@ function ProductList({ categoryId }: { categoryId?: string }) {
     dispatch(setSelectedProduct(null));
     dispatch(onOpenChangeProductModal(true));
   }, [dispatch]);
-
-  console.log(isSuccess);
 
   return (
     <Card className="bg-slate-100 border-0 min-h-[calc(100vh-8rem)] flex flex-col justify-between">

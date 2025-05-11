@@ -40,7 +40,7 @@ function CategoryForm({
   }, [edit, data]);
 
   return (
-    <div data-testid="category-form" className="max-w-lg">
+    <div data-testid="product-form" className="max-w-lg">
       <FormMaker<ProductWithAttributesType>
         afterEndCallback={afterEndCallback}
         defaultValues={defaultValues}

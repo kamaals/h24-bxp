@@ -10,7 +10,7 @@ exports[`Tree > Should match the snapshot 1`] = `
       >
         <ul>
           <li
-            class="horizontal-line after:absolute after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:w-4 after:h-4 after:border-b after:z-100 relative vertical-line before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4 pt-2"
+            class="horizontal-line after:absolute after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:w-4 after:h-4 after:border-b after:z-100 after:border-slate-300 relative vertical-line before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4 before:border-slate-300 pt-2"
           >
             <div
               data-orientation="vertical"
@@ -99,7 +99,7 @@ exports[`Tree > Should match the snapshot 1`] = `
                     >
                       <ul>
                         <li
-                          class="horizontal-line after:absolute after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:h-4 after:border-b after:z-100 after:w-4 relative vertical-line before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4 pt-2"
+                          class="horizontal-line after:absolute after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:h-4 after:border-b after:z-100 after:border-slate-300 after:w-4 relative vertical-line before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4 before:border-slate-300 pt-2"
                         >
                           <div
                             class="ml-5 h-10 border rounded-lg bg-zinc-50 flex text-left items-center p-2"
@@ -128,7 +128,7 @@ exports[`Tree > Should match the snapshot 1`] = `
             </div>
           </li>
           <li
-            class="horizontal-line after:absolute after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:w-4 after:h-4 after:border-b after:z-100 relative vertical-line before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4 pt-2"
+            class="horizontal-line after:absolute after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:w-4 after:h-4 after:border-b after:z-100 after:border-slate-300 relative vertical-line before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4 before:border-slate-300 pt-2"
           >
             <div
               data-orientation="vertical"
@@ -210,7 +210,7 @@ exports[`Tree > Should match the snapshot 1`] = `
             </div>
           </li>
           <li
-            class="horizontal-line after:absolute after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:h-4 after:border-b after:z-100 after:w-4 relative vertical-line before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4 pt-2"
+            class="horizontal-line after:absolute after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:h-4 after:border-b after:z-100 after:border-slate-300 after:w-4 relative vertical-line before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4 before:border-slate-300 pt-2"
           >
             <div
               class="ml-5 h-10 border rounded-lg bg-zinc-50 flex text-left items-center p-2"
@@ -241,7 +241,7 @@ exports[`Tree > Should match the snapshot 1`] = `
     >
       <ul>
         <li
-          class="horizontal-line after:absolute after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:w-4 after:h-4 after:border-b after:z-100 relative vertical-line before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4 pt-2"
+          class="horizontal-line after:absolute after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:w-4 after:h-4 after:border-b after:z-100 after:border-slate-300 relative vertical-line before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4 before:border-slate-300 pt-2"
         >
           <div
             data-orientation="vertical"
@@ -330,7 +330,7 @@ exports[`Tree > Should match the snapshot 1`] = `
                   >
                     <ul>
                       <li
-                        class="horizontal-line after:absolute after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:h-4 after:border-b after:z-100 after:w-4 relative vertical-line before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4 pt-2"
+                        class="horizontal-line after:absolute after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:h-4 after:border-b after:z-100 after:border-slate-300 after:w-4 relative vertical-line before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4 before:border-slate-300 pt-2"
                       >
                         <div
                           class="ml-5 h-10 border rounded-lg bg-zinc-50 flex text-left items-center p-2"
@@ -359,7 +359,7 @@ exports[`Tree > Should match the snapshot 1`] = `
           </div>
         </li>
         <li
-          class="horizontal-line after:absolute after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:w-4 after:h-4 after:border-b after:z-100 relative vertical-line before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4 pt-2"
+          class="horizontal-line after:absolute after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:w-4 after:h-4 after:border-b after:z-100 after:border-slate-300 relative vertical-line before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4 before:border-slate-300 pt-2"
         >
           <div
             data-orientation="vertical"
@@ -441,7 +441,7 @@ exports[`Tree > Should match the snapshot 1`] = `
           </div>
         </li>
         <li
-          class="horizontal-line after:absolute after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:h-4 after:border-b after:z-100 after:w-4 relative vertical-line before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4 pt-2"
+          class="horizontal-line after:absolute after:rounded-bl-lg after:border-l after:left-1 after:top-3.5 after:h-4 after:border-b after:z-100 after:border-slate-300 after:w-4 relative vertical-line before:absolute before:left-1 before:top-0 before:bottom-0 before:w-2 before:border-l before:z-100 [&:last-child]:before:h-4 before:border-slate-300 pt-2"
         >
           <div
             class="ml-5 h-10 border rounded-lg bg-zinc-50 flex text-left items-center p-2"

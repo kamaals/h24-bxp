@@ -9,7 +9,7 @@ import {
 } from "@/components/molecules/sidebar";
 import { Separator } from "@/components/atoms/separator";
 import { Metadata } from "next";
-import ProductFormModal from "@/components/molecules/forms/product-form-modal";
+import ProductFormModal from "@/components/molecules/forms/product/product-form-modal";
 
 export const metadata: Metadata = {
   title: "Backoffice",

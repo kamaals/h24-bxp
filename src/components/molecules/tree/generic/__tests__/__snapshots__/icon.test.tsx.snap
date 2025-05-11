@@ -5,6 +5,35 @@ exports[`TreeIcon > Should match the snapshot 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <span>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-eye h-4 w-4 shrink-0 mr-2 relative z-20"
+          data-testid="icon"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+          />
+          <circle
+            cx="12"
+            cy="12"
+            r="3"
+          />
+        </svg>
+      </span>
+    </div>
+  </body>,
+  "container": <div>
+    <span>
       <svg
         aria-hidden="true"
         class="lucide lucide-eye h-4 w-4 shrink-0 mr-2 relative z-20"
@@ -28,32 +57,7 @@ exports[`TreeIcon > Should match the snapshot 1`] = `
           r="3"
         />
       </svg>
-    </div>
-  </body>,
-  "container": <div>
-    <svg
-      aria-hidden="true"
-      class="lucide lucide-eye h-4 w-4 shrink-0 mr-2 relative z-20"
-      data-testid="icon"
-      fill="none"
-      height="24"
-      stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
-      viewBox="0 0 24 24"
-      width="24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
-      />
-      <circle
-        cx="12"
-        cy="12"
-        r="3"
-      />
-    </svg>
+    </span>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

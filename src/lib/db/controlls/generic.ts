@@ -41,7 +41,6 @@ export const update = async <E extends AnyPgTable>(
       .returning();
     return NextResponse.json(resp);
   } catch (err: unknown) {
-    console.log(err);
     return NextResponse.json(err);
   }
 };
@@ -59,7 +58,6 @@ export const deleteByID = async <E extends AnyPgTable>(
       .returning();
     return NextResponse.json(resp);
   } catch (err: unknown) {
-    console.log(err);
     return NextResponse.json(err);
   }
 };

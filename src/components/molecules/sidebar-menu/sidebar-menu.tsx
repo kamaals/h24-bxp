@@ -4,7 +4,7 @@ import {
   SidebarGroup,
   SidebarGroupLabel,
 } from "@/components/molecules/sidebar";
-import MenuItem from "@/components/molecules/sidebar-menu/menu-item";
+
 import CategoriesTree from "@/components/molecules/tree/categories-tree";
 
 export type SidebarNavItem = {
@@ -20,11 +20,10 @@ export type Props = {
   label: string;
 };
 
-function SidebarMainMenu({ label, items }: Props) {
+function SidebarMainMenu({ label }: Props) {
   return (
     <SidebarGroup>
       <SidebarGroupLabel>{label}</SidebarGroupLabel>
-      <MenuItem level={0} items={items ? items : []} />
       <CategoriesTree />
     </SidebarGroup>
   );

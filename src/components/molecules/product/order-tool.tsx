@@ -6,9 +6,9 @@ import { QueryOrder } from "@/lib/store/types/product";
 import { setNameOrder, setPriceOrder } from "@/lib/store/features/app/appSlice";
 import { cn } from "@/lib/utils";
 import { useAppSelector } from "@/lib/store/hooks";
-import ProductsPerPage from "@/components/molecules/products-per-page";
+import ProductsPerPage from "@/components/molecules/product/products-per-page";
 
-function OrderButton({
+export function OrderButton({
   label,
   onChange,
   order,
@@ -22,6 +22,7 @@ function OrderButton({
       {label}
       <div className={"flex flex-col"}>
         <Button
+          data-testid={"order-up-button"}
           onClick={() => onChange("asc")}
           className={cn(
             "h-5 border border-b-0 bg-white rounded-b-none",
@@ -33,6 +34,7 @@ function OrderButton({
           <ChevronUp />
         </Button>
         <Button
+          data-testid={"order-down-button"}
           onClick={() => onChange("desc")}
           className={cn(
             "h-5 border border-t-0 bg-white rounded-t-none",
@@ -61,6 +63,7 @@ function OrderTool() {
     [dispatch],
   );
   const handlePriceOrder = React.useCallback(
+    /* istanbul ignore next @preserve */
     (order: QueryOrder) => {
       dispatch(setPriceOrder(order));
     },

@@ -51,7 +51,6 @@ export const getById = async (id: string) => {
     });
     return NextResponse.json(resp);
   } catch (err: unknown) {
-    console.log(err);
     return NextResponse.json(err);
   }
 };

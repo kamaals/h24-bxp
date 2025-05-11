@@ -15,6 +15,7 @@ import {
 import ActionConfirm from "@/components/molecules/action-confirm/action-confirm";
 import { Edit } from "lucide-react";
 import { useDeleteProductMutation } from "@/lib/store/api/productServices";
+import Link from "next/link";
 
 function Product({
   product,
@@ -26,7 +27,7 @@ function Product({
   const dispatch = useDispatch();
 
   return (
-    <article className="flex flex-col justify-between p-4 bg-white rounded-[2rem] shadow-md overflow-y-auto">
+    <article className="flex flex-col justify-between p-4 bg-white rounded-[2rem] shadow-md overflow-y-auto max-w-2xl">
       <div className={"space-y-4 "}>
         <div className="relative h-48 rounded-3xl overflow-hidden shadow-sm">
           {product.lastUpdated && (
@@ -34,23 +35,25 @@ function Product({
               Last updated
             </span>
           )}
-          <Image
-            fill={true}
-            objectFit={"cover"}
-            src={
-              Array.isArray(product.photo) && product.photo.length
-                ? product.photo[0]
-                : "https://picsum.photos/id/235/400/300"
-            }
-            alt={product.name}
-          />
+          <Link href={`/dashboard/product/${product.id}`}>
+            <Image
+              fill={true}
+              objectFit={"cover"}
+              src={
+                Array.isArray(product.photo) && product.photo.length
+                  ? product.photo[0]
+                  : "https://picsum.photos/id/235/400/300"
+              }
+              alt={product.name}
+            />
+          </Link>
           <header
             className={
               "flex items-end pb-4 absolute left-0 bottom-0 right-0 h-20 bg-gradient-to-t from-black/90  to-[rgba(0,0,0,0)] to-100% text-white px-6"
             }
           >
             <div className="flex flex-col">
-              <h3 className={"font-black text-sm -mb-0.5 pb-0 "}>
+              <h3 className={"font-black text-sm -mb-0.5 pb-0 underline"}>
                 {product.name}
               </h3>
               <span className={"text-slate-400 text-xs"}>
@@ -65,7 +68,11 @@ function Product({
               "flex flex-col flex-1 overflow-hidden pb-1 border-b mb-2"
             }
           >
-            <span className={"font-bold text-lg"}>{product.name}</span>
+            <Link href={`/dashboard/product/${product.id}`}>
+              <span className={"font-bold text-lg underline"}>
+                {product.name}
+              </span>
+            </Link>
             <span className="text-md text-slate-700">
               {Number(product.price).toFixed(2)} $
             </span>

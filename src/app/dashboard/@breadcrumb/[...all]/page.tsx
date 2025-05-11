@@ -19,7 +19,6 @@ export default async function BreadcrumbSlotDynamic(props: {
   for (let i = 0; i < params.all.length; i++) {
     const route = params.all[i];
     const href = `/${params.all.at(0)}/${route}`;
-    console.log("route", route);
     if (i === params.all.length - 1) {
       breadcrumbPage = (
         <BreadcrumbItem>
@@ -38,7 +37,6 @@ export default async function BreadcrumbSlotDynamic(props: {
       );
     }
   }
-  console.log("route", breadcrumbPage);
   return (
     <Breadcrumb>
       <BreadcrumbList>

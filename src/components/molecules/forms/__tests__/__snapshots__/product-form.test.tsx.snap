@@ -7,7 +7,7 @@ exports[`CategoryForm > should match snapshot 1`] = `
     <div>
       <div
         class="max-w-lg"
-        data-testid="category-form"
+        data-testid="product-form"
       >
         <form>
           <div>
@@ -116,7 +116,7 @@ exports[`CategoryForm > should match snapshot 1`] = `
   "container": <div>
     <div
       class="max-w-lg"
-      data-testid="category-form"
+      data-testid="product-form"
     >
       <form>
         <div>

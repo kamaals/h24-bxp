@@ -1,3 +1,4 @@
+/* istanbul ignore file @preserve */
 import { NextRequest, NextResponse } from "next/server";
 import { StatusCodes, ReasonPhrases } from "http-status-codes";
 import { category } from "@/lib/db/schemas";

@@ -4,61 +4,9 @@ exports[`RootLayout > renders the RootLayout component 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
-    <div>
-      <section>
-        <h1>
-          Welcome!
-        </h1>
-        <header>
-          <a
-            href="/dashboard"
-          >
-            Dash
-          </a>
-          <a
-            href="/login"
-          >
-            Login
-          </a>
-        </header>
-        <main>
-          <p>
-            Hello and welcome!
-          </p>
-        </main>
-        <footer>
-          Hi
-        </footer>
-      </section>
-    </div>
+    <div />
   </body>,
-  "container": <div>
-    <section>
-      <h1>
-        Welcome!
-      </h1>
-      <header>
-        <a
-          href="/dashboard"
-        >
-          Dash
-        </a>
-        <a
-          href="/login"
-        >
-          Login
-        </a>
-      </header>
-      <main>
-        <p>
-          Hello and welcome!
-        </p>
-      </main>
-      <footer>
-        Hi
-      </footer>
-    </section>
-  </div>,
+  "container": <div />,
   "debug": [Function],
   "findAllByAltText": [Function],
   "findAllByDisplayValue": [Function],
