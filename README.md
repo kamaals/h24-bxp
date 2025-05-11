@@ -54,7 +54,8 @@ yarn dev
 ```
 
 
-## Testing
+## Testing 
+(Please add new env file (`.env.test`) for testing, you can duplicate the existing one and change the DB if needed `.env.local`)
 
 Run tests:
 
