@@ -9,11 +9,14 @@ import {
   SidebarRail,
 } from "@/components/molecules/sidebar";
 import SidebarMainMenu from "@/components/molecules/sidebar-menu/sidebar-menu";
+import Logout from "@/components/molecules/auth/logout";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
-      <SidebarHeader></SidebarHeader>
+      <SidebarHeader>
+        <Logout />
+      </SidebarHeader>
       <SidebarContent>
         <SidebarMainMenu label="" />
       </SidebarContent>

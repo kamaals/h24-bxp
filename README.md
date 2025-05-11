@@ -1,77 +1,95 @@
-## Architecture
+![img.png](img.png)
 
-- Next.js as fullstack framework.
-- Tailwind CSS for styling.
-- PostgreSQL as database.
-- Drizzle ORM for database interaction.
-- BetterAuth for authentication.
-- zod for types.
-- RHF for form handling.
-- UI components from Radix UI & Tanstack with ShadCN (headless UI)
-  - Instead of Ant Design, I use Radix UI & Tanstack with ShadCN for UI components.
-  - Reason is shadcn is more flexible and customizable than Ant Design.
-  - Also, shadcn is more lightweight than Ant Design.
-  - Ant Design is a bit heavy and not very flexible.
-  - I personally prefer shadcn over Ant Design.
-- Features: authentication, authorization, and login/logout
-  - BetterAuth for authentication
-  - Using next middleware for authorization
-- Features: Category tree structure in UI
-  - Using custom component to show user to tree structure
-- Features: Category tree structure in DB
-  - Using the same schema as parent category or null for root level category
-- Features: Product category list in the UI
-  - Use tan-stack table to display the list and for the pagination function
-- Features: Product category list in the API/State
-  - Use rtk query to fetch data from the API with pagination & category filter
-- Features: Filter and Sort product list in the UI
-  - Use tan-stack table coupled with rtk query to fetch data from the API?
-  - Or directly let API to handle the filter and sort?
-- Features: Show details of the product in the UI
-  - use nextjs slot routing and interceptor to display the product details with fallback
-- Features: Show the last modified product on top of the page.
+## Tech Stack
 
-  - Use DB trigger to update the last modified date? or use postgres realtime?
+- **Next.js**: Full-stack framework.
+- **Tailwind CSS**: Styling framework.
+- **PostgreSQL**: Database.
+- **Drizzle ORM**: Database interaction.
+- **BetterAuth**: Authentication.
+- **Zod**: Type validation.
+- **React Hook Form (RHF)**: Form handling.
+- **UI Components**: Radix UI (headless UI) and Tailwind
+  - Radix UI is used instead of Ant Design for UI components.
+  - **Reason**: Radix UI (via shadcn) is more flexible and customizable than Ant Design.
+  - shadcn is lightweight compared to Ant Design.
+  - Ant Design is heavier and less flexible.
+  - Preference for shadcn over Ant Design for better customization.
 
-- TDD
+## Features
 
-  - Use jest and react testing library for unit test
-  - Istanbul for coverage
-  - Supertest for API testing
+- **Authentication, Authorization, and Login/Logout**
+  - BetterAuth handles authentication.
+  - Next.js middleware is used for authorization.
 
-- Deployment
+- **Category Tree Structure in UI**
+  - Custom component to display the tree structure to users.
 
-  - Use Vercel for deployment
-  - DB is NeonDB
-  - Use Github actions for CI/CD
+- **Category Tree Structure in Database**
+  - Uses the same schema as the parent category, or `null` for root-level categories.
 
-- Local development
-  - Use Docker for local development
-  - Use postgres docker container
-  - Use docker-compose to run the app and db
+- **Product Category List in UI**
+  - Custom product list component.
 
+- **Product Category List in API/State**
+  - RTK Query fetches data from the API with pagination and category filtering.
+
+- **Sort Product List in UI**
+  - Sorting is handled in the frontend using `@redux-toolkit` and RTK Query.
+  - Sorting is handled in the backend using PostgreSQL `ORDER BY` with Drizzle ORM.
+
+- **Pagination & Limit**
+  - Frontend uses Redux state to manage limit and offset (pagination).
+  - API sends Redux state for pagination to RTK Query.
+  - Backend receives offset and limit from the API and passes them to SQL queries via Drizzle ORM.
+
+- **Show Last Modified Product**
+  - Backend uses Drizzle ORM to fetch the last modified product using `updatedAt` in `DESC` order, limited to one item, and joins it with other query results.
+
+- **Show Product Details in UI**
+  - Uses Next.js slot routing and interceptors to display product details with a fallback.
+
+## Test-Driven Development (TDD)
+
+- **Tools**:
+  - Jest and React Testing Library for unit testing.
+  - Istanbul for test coverage.
+  - Vitest for additional testing.
+
+## Deployment
+
+- **Platform**: Vercel for deployment.
+- **Database**: NeonDB.
+- **CI/CD**: GitHub Actions for continuous integration and deployment.
+
+## Local Development
+
+- **Tools**:
+  - Docker for local development.
+  - PostgreSQL Docker container.
+  - Docker Compose to run the application and database.
 ## TODO
 
 - [x] Initialized
 - [x] Setup ShadCN
 - [x] Setup Tailwind CSS
 - [x] Add Redux toolkit
-  - [] Add rtk query
-- [ ] Add BetterAuth
-- [] Add DB
+  - [x] Add rtk query
+- [x] Add BetterAuth
+- [x] Add DB
   - [x] Add postgres (Docker)
-  - [] Add NeonDB
+  - [x] Add NeonDB
   - [x] Add Drizzle ORM
   - [x] Migrate postgres
-  - [] Add Schemas
-    - [] Product
-    - [] Category
-    - [] Attribute
-  - [] Configure .env
-- [ ] Dockerize
-  - [ ] Add postgres docker container
-  - [ ] Add docker-compose
-- [ ] Setup Test
+  - [x] Add Schemas
+    - [x] Product
+    - [x] Category
+    - [x] Attribute
+  - [x] Configure .env
+- [x] Dockerize
+  - [x] Add postgres docker container
+  - [x] Add docker-compose
+- [x] Setup Test
   - [x] Add jest
   - [x] Add React testing library
   - [x] Add Istanbul
