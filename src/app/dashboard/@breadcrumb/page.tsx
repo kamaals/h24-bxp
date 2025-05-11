@@ -1,7 +1,10 @@
+import { BreadcrumbLink } from "@/components/atoms/breadcrumb";
+import React from "react";
+
 export default function BreadcrumbSlot() {
   return (
     <div>
-      <h1> Home </h1>
+      <BreadcrumbLink href="/dashboard">Categories Tree</BreadcrumbLink>
     </div>
   );
 }

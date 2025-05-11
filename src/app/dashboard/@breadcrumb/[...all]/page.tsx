@@ -4,48 +4,17 @@ import {
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
-  BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/atoms/breadcrumb";
 import React from "react";
-import type { ReactElement } from "react";
 
-export default async function BreadcrumbSlotDynamic(props: {
-  params: Promise<{ all: string[] }>;
-}) {
-  const params = await props.params;
-  const breadcrumbItems: ReactElement[] = [];
-  let breadcrumbPage: ReactElement = <></>;
-  for (let i = 0; i < params.all.length; i++) {
-    const route = params.all[i];
-    const href = `/${params.all.at(0)}/${route}`;
-    if (i === params.all.length - 1) {
-      breadcrumbPage = (
-        <BreadcrumbItem>
-          <BreadcrumbPage className="capitalize">{route}</BreadcrumbPage>
-        </BreadcrumbItem>
-      );
-    } else {
-      breadcrumbItems.push(
-        <React.Fragment key={href}>
-          <BreadcrumbItem>
-            <BreadcrumbLink href={href} className="capitalize">
-              {route}
-            </BreadcrumbLink>
-          </BreadcrumbItem>
-        </React.Fragment>,
-      );
-    }
-  }
+export default function BreadcrumbSlotDynamic() {
   return (
     <Breadcrumb>
       <BreadcrumbList>
         <BreadcrumbItem>
-          <BreadcrumbLink href="/">Home</BreadcrumbLink>
+          <BreadcrumbLink href="/dashboard">Categories Tree</BreadcrumbLink>
         </BreadcrumbItem>
-        {breadcrumbItems}
-        <BreadcrumbSeparator />
-        {breadcrumbPage}
       </BreadcrumbList>
     </Breadcrumb>
   );
