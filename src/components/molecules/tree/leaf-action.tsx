@@ -54,7 +54,7 @@ export function LeafAction({
             data-testid={"leaf-action-dropdown-add"}
             onClick={addAction}
           >
-            <Plus /> Add
+            <Plus /> Add Child Category
           </DropdownMenuItem>
           <DropdownMenuItem
             data-testid={"leaf-action-dropdown-edit"}

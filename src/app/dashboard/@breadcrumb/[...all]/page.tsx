@@ -4,7 +4,6 @@ import {
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
-  BreadcrumbSeparator,
 } from "@/components/atoms/breadcrumb";
 import React from "react";
 

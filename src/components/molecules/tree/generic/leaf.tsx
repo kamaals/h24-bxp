@@ -9,6 +9,7 @@ import React from "react";
 import TreeIcon from "./icon";
 import TreeActions from "./actions";
 import { cn } from "@/lib/utils";
+import { ShineBorder } from "@/components/atoms/shine-border";
 
 export const LeafComponent = React.forwardRef(function LeafComponent<
   DataItem extends TreeDataItem,
@@ -24,8 +25,15 @@ export const LeafComponent = React.forwardRef(function LeafComponent<
   }: LeafProps<DataItem> & React.HTMLAttributes<HTMLDivElement>,
   ref: React.ForwardedRef<HTMLDivElement>,
 ) {
+  const isSelected = selectedItemId === data.id;
   return (
-    <div className="ml-5 h-10 border rounded-lg bg-zinc-50 flex text-left items-center p-2">
+    <div className="ml-5 h-10 border rounded-lg bg-zinc-50 flex text-left items-center relative p-2">
+      {isSelected && (
+        <ShineBorder
+          shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+          borderWidth={2}
+        />
+      )}
       <div
         data-testid={`tree-leaf-${data.id}`}
         ref={ref}
@@ -33,7 +41,6 @@ export const LeafComponent = React.forwardRef(function LeafComponent<
           "flex flex-1 items-center cursor-pointer relative",
           treeVariants(),
           className,
-          selectedItemId === data.id && selectedTreeVariants(),
         )}
         onClick={() => {
           handleSelectChange?.(data);
