@@ -1,3 +1,75 @@
+# Pruduct CRUD
+
+## Before you begin
+ - This is a Next.js 15 TypeScript project using a PostgreSQL database and Better Auth.
+ - You must run PostgreSQL locally, remotely (e.g., https://neon.tech/), or in Docker.
+ - Configure your environment variables with your database and Better Auth secret.
+
+## Environment Configuration
+
+You can rename and use the example.env file as your Next.js local.env. The minimum required environment variables are:
+
+1) DATABASE_URL // PS DB Connection url
+2) BETTER_AUTH_SECRET -> https://www.better-auth.com/docs/installation#set-environment-variables
+3) BETTER_AUTH_URL // Your site base url
+
+## Database Migration
+
+Once your database is set up, migrate before starting the project.
+
+Install dependencies:
+
+```bash
+yarn install
+```
+
+Generate migration (optional):
+
+```bash
+yarn db:gen
+```
+
+Run migration:
+
+```bash
+yarn db:mig
+```
+
+(Optional) Launch Drizzle Studio:
+
+```bash
+yarn db:sdt
+
+```
+https://orm.drizzle.team/
+
+## Development
+
+Start the development server:
+
+```bash
+yarn dev
+```
+
+
+## Testing
+
+Run tests:
+
+```bash
+yarn test
+```
+
+Run tests with coverage:
+
+```
+yarn test:coverage
+```
+
+
+------------
+
+
 ![img.png](img.png)
 
 ## Tech Stack
