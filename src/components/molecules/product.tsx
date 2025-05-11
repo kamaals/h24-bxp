@@ -29,6 +29,11 @@ function Product({
     <article className="flex flex-col justify-between p-4 bg-white rounded-[2rem] shadow-md overflow-y-auto">
       <div className={"space-y-4 "}>
         <div className="relative h-48 rounded-3xl overflow-hidden shadow-sm">
+          {product.lastUpdated && (
+            <span className="absolute text-xs px-4 p-3 inline-block bg-gradient-to-b from-black/50  to-[rgba(0,0,0,0)] to-100% text-white z-30 rounded-br-3xl ">
+              Last updated
+            </span>
+          )}
           <Image
             fill={true}
             objectFit={"cover"}

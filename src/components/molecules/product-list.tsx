@@ -12,10 +12,12 @@ import { Plus } from "lucide-react";
 import { useDispatch } from "react-redux";
 import {
   onOpenChangeProductModal,
+  setCategory,
   setSelectedProduct,
 } from "@/lib/store/features/app/appSlice";
 
 function ProductList({ categoryId }: { categoryId?: string }) {
+  const dispatch = useDispatch();
   const { nameOrder, priceOrder, category } = useAppSelector(
     (state) => state.app,
   );
@@ -28,13 +30,23 @@ function ProductList({ categoryId }: { categoryId?: string }) {
     },
   });
 
-  const dispatch = useDispatch();
+  React.useEffect(() => {
+    const fetchCategory = async () => {
+      const resp = await fetch(`/api/category/${categoryId}`);
+      const data = await resp.json();
+      dispatch(setCategory(data));
+    };
+
+    if (categoryId && !category) {
+      fetchCategory().catch(console.log);
+    }
+  }, [categoryId, category, dispatch]);
 
   const { setOpenMobile } = useSidebar();
 
   React.useEffect(() => {
     setOpenMobile(false);
-  }, [categoryId]);
+  }, [categoryId, setOpenMobile]);
 
   const handleAddProduct = React.useCallback(() => {
     dispatch(setSelectedProduct(null));
@@ -42,7 +54,7 @@ function ProductList({ categoryId }: { categoryId?: string }) {
   }, [dispatch]);
 
   return (
-    <Card className="col-span-4 lg:col-span-5 bg-slate-100 border-0">
+    <Card className="col-span-4 lg:col-span-4 bg-slate-100 border-0">
       <CardHeader>
         <div className={"flex justify-between items-center"}>
           <div className={"flex flex-col gap-2"}>

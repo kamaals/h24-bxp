@@ -123,9 +123,37 @@ export async function getAllProductsByCategoryId(
   orderChunk: Array<string>,
 ) {
   const order = buildOrder(orderChunk);
-  console.log("Ord", order);
 
   const db = connectDB() as DB;
+
+  const lasttUpdatedProduct = await db.query.product.findFirst({
+    orderBy: [desc(product.updatedAt)],
+    with: {
+      category: {
+        columns: {
+          name: true,
+          id: true,
+        },
+      },
+      attributes: {
+        columns: {
+          name: true,
+          type: true,
+          code: true,
+          id: true,
+        },
+      },
+    },
+    columns: {
+      id: true,
+      name: true,
+      categoryId: true,
+      price: true,
+      photo: true,
+      description: true,
+    },
+  });
+
   const products = await db.query.product.findMany({
     orderBy: order,
     where: (product) => eq(product.categoryId, id),
@@ -155,7 +183,14 @@ export async function getAllProductsByCategoryId(
     },
   });
 
-  return products;
+  return lasttUpdatedProduct
+    ? [
+        { ...lasttUpdatedProduct, lastUpdated: true },
+        ...products.filter((p) =>
+          lasttUpdatedProduct ? lasttUpdatedProduct.id !== p.id : true,
+        ),
+      ]
+    : products;
 }
 
 export async function getProductById(id: string) {

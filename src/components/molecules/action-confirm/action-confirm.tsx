@@ -59,7 +59,7 @@ function ActionConfirm({ onConfirm, onCancel }: ActionConfirmProps) {
               className="text-white"
               aria-label="Confirm"
             >
-              Yes, Delete
+              Yes
             </Button>
 
             <Button

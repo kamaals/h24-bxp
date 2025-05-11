@@ -3,6 +3,7 @@ import { connectDB } from "@/lib/db/db-connect";
 import { CategoryWithChildren } from "@/lib/types/category";
 import { DB } from "@/lib/types/db";
 import { eq } from "drizzle-orm";
+import { NextResponse } from "next/server";
 
 export const getAllCategories = async () => {
   const db = connectDB(); // Assuming you have a schema object
@@ -41,3 +42,16 @@ export async function getCategoryTree(
 
   return categories;
 }
+
+export const getById = async (id: string) => {
+  try {
+    const db = connectDB();
+    const resp = await db?.query.category.findFirst({
+      where: (cate) => eq(cate.id, id),
+    });
+    return NextResponse.json(resp);
+  } catch (err: unknown) {
+    console.log(err);
+    return NextResponse.json(err);
+  }
+};

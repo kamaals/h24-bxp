@@ -1,8 +1,7 @@
 /* istanbul ignore file @preserve */
 import { createInsertSchema } from "drizzle-zod";
 import { product, productAttribute } from "@/lib/db/schemas";
-import { array, object, string, z } from "zod";
-import { categorySchema } from "@/lib/zod-schemas/category";
+import { array, object, boolean, string, z } from "zod";
 
 export const productSchema = createInsertSchema(product).omit({ id: true });
 
@@ -21,13 +20,9 @@ export const productWithAttributesSchema = productSchema.extend({
   ).optional(),
 });
 
-export const productWithAttributesAndCategorySchema = productSchema.extend({
-  attributes: array(attributeSchema.extend({ id: string() })).optional(),
-  category: categorySchema.extend({ id: string() }),
-});
-
 export const productWithCategoryAndAttributeResponseSchema =
   productSchema.extend({
+    lastUpdated: boolean().optional(),
     id: string(),
     category: object({
       name: string(),
