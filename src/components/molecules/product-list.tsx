@@ -72,7 +72,7 @@ function ProductList({ categoryId }: { categoryId?: string }) {
     <Card className="bg-slate-100 border-0 min-h-[calc(100vh-8rem)] flex flex-col justify-between">
       <div className="flex-col flex gap-y-6">
         <CardHeader>
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-4 md:items-center">
             <div className="flex flex-col gap-2">
               <h2 className="text-3xl font-bold flex gap-2">
                 {category?.name ?? ""} / Products

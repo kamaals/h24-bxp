@@ -45,10 +45,12 @@ export const appSlice = createSlice({
 
     setNameOrder: (state, { payload }: PayloadAction<QueryOrder>) => {
       state.nameOrder = payload;
+      state.productPagination.offset = state.productPagination.setup[0];
     },
 
     setPriceOrder: (state, { payload }: PayloadAction<QueryOrder>) => {
       state.priceOrder = payload;
+      state.productPagination.offset = state.productPagination.setup[0];
     },
 
     setCategory: (
