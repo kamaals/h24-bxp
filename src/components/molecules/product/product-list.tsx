@@ -29,7 +29,7 @@ function ProductList({ categoryId }: { categoryId?: string }) {
     (state) => state.app,
   );
 
-  const { data, isSuccess } = useGetProductsQuery({
+  const { data } = useGetProductsQuery({
     category: categoryId,
     order: {
       name: nameOrder,

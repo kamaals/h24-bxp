@@ -6,7 +6,7 @@ exports[`Auth Layout > Should render AuthLayout Correctly 1`] = `
   "baseElement": <body>
     <div>
       <section
-        class="flex container items-center justify-center px-6 "
+        class="flex container items-center justify-center mx-auto max-w-sm"
       >
         <svg
           aria-hidden="true"
@@ -39,7 +39,7 @@ exports[`Auth Layout > Should render AuthLayout Correctly 1`] = `
   </body>,
   "container": <div>
     <section
-      class="flex container items-center justify-center px-6 "
+      class="flex container items-center justify-center mx-auto max-w-sm"
     >
       <svg
         aria-hidden="true"

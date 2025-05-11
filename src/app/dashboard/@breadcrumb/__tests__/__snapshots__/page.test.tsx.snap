@@ -6,17 +6,25 @@ exports[`BreadcrumbSlot > renders the BreadcrumbSlot correctly 1`] = `
   "baseElement": <body>
     <div>
       <div>
-        <h1>
-           Home 
-        </h1>
+        <a
+          class="hover:text-foreground transition-colors"
+          data-slot="breadcrumb-link"
+          href="/dashboard"
+        >
+          Categories Tree
+        </a>
       </div>
     </div>
   </body>,
   "container": <div>
     <div>
-      <h1>
-         Home 
-      </h1>
+      <a
+        class="hover:text-foreground transition-colors"
+        data-slot="breadcrumb-link"
+        href="/dashboard"
+      >
+        Categories Tree
+      </a>
     </div>
   </div>,
   "debug": [Function],

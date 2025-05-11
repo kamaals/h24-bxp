@@ -246,7 +246,7 @@ export async function getProductById(id: string) {
     });
 
     return product;
-  } catch (e) {
+  } catch {
     return [];
   }
 }

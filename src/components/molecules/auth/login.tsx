@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/atoms/button";
 import {
   Card,
   CardContent,
@@ -8,21 +7,43 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/atoms/card";
-import { Input } from "@/components/atoms/input";
-import { Label } from "@/components/atoms/label";
-import { Checkbox } from "@/components/atoms/checkbox";
-import { useState } from "react";
-import { Loader2 } from "lucide-react";
+import React from "react";
 import { signIn } from "@/lib/client";
-
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { toast } from "sonner";
 import { BorderBeam } from "@/components/atoms/border-beam";
+import { LoginType } from "@/lib/types/user";
+import { loginSchema } from "@/lib/zod-schemas/user";
+import { Form } from "@/components/atoms/form";
+import RHFInput from "@/components/atoms/rhf/rhf-input";
+import LoadingButton from "@/components/molecules/loading-button/loading-button";
 
 export default function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [rememberMe, setRememberMe] = useState(false);
+  const [loading, setLoading] = React.useState(false);
+  const form = useForm<LoginType>({
+    resolver: zodResolver(loginSchema),
+    defaultValues: {
+      email: "john@doe.aes",
+      password: "Element@AI",
+    },
+  });
 
+  const handleLogin = React.useCallback(async (data: LoginType) => {
+    try {
+      setLoading(true);
+      const { error } = await signIn.email({
+        ...data,
+        callbackURL: "/dashboard",
+      });
+      if (error) {
+        toast.error(error.message);
+        setLoading(false);
+      }
+    } catch {
+      setLoading(false);
+    }
+  }, []);
   return (
     <Card className="max-w-sm w-full relative overflow-hidden shadow-md mt-8">
       <CardHeader>
@@ -34,74 +55,27 @@ export default function Login() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="grid gap-4">
-          <div className="grid gap-2">
-            <Label htmlFor="email">Email</Label>
-            <Input
-              data-testid="email"
-              id="email"
-              type="email"
-              placeholder="m@example.com"
-              required
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-              value={email}
-            />
-          </div>
-
-          <div className="grid gap-2">
-            <div className="flex items-center">
-              <Label htmlFor="password">Password</Label>
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(handleLogin)}>
+            <div className="grid gap-4">
+              <div className="grid gap-2">
+                <RHFInput name={"email"} label={"Email"} />
+              </div>
+              <div className="grid gap-2">
+                <RHFInput
+                  name={"password"}
+                  label={"Password"}
+                  type={"password"}
+                />
+              </div>
+              <div className={"py-4 flex justify-end animate"}>
+                <LoadingButton loading={loading} type={"submit"}>
+                  Sign in
+                </LoadingButton>
+              </div>
             </div>
-
-            <Input
-              data-testid="password"
-              id="password"
-              type="password"
-              placeholder="password"
-              autoComplete="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </div>
-
-          <div className="flex items-center gap-2">
-            <Checkbox
-              data-testid="remember"
-              id="remember"
-              onClick={() => {
-                setRememberMe(!rememberMe);
-              }}
-            />
-            <Label htmlFor="remember">Remember me</Label>
-          </div>
-
-          <Button
-            data-testid="login-btn"
-            type="submit"
-            className="w-full"
-            disabled={loading}
-            onClick={async () => {
-              setLoading(true);
-              await signIn.email({
-                email,
-                password,
-                callbackURL: "/dashboard",
-              });
-            }}
-          >
-            {loading ? (
-              <Loader2
-                data-testid={"loader"}
-                size={16}
-                className="animate-spin"
-              />
-            ) : (
-              "Login"
-            )}
-          </Button>
-        </div>
+          </form>
+        </Form>
       </CardContent>
       <BorderBeam />
     </Card>

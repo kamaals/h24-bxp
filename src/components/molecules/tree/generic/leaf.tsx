@@ -1,10 +1,4 @@
-import {
-  TreeDataItem,
-  LeafProps,
-  treeVariants,
-  selectedTreeVariants,
-  TitleLeafProps,
-} from "./index";
+import { TreeDataItem, LeafProps, treeVariants, TitleLeafProps } from "./index";
 import React from "react";
 import TreeIcon from "./icon";
 import TreeActions from "./actions";
