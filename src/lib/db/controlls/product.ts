@@ -5,7 +5,7 @@ import { AttributeType, ProductType } from "@/lib/types/product";
 import { product, productAttribute } from "@/lib/db/schemas";
 import { ReasonPhrases, StatusCodes } from "http-status-codes";
 import { DB } from "@/lib/types/db";
-import { eq, asc, desc } from "drizzle-orm";
+import { eq, asc, desc, count, ne, and } from "drizzle-orm";
 
 function getRandomIntInclusive(min: number, max: number) {
   min = Math.ceil(min);
@@ -121,13 +121,20 @@ export const buildOrder = (order: Array<string>) => {
 export async function getAllProductsByCategoryId(
   id: string,
   orderChunk: Array<string>,
+  pagination: { limit: number; offset: number },
 ) {
   const order = buildOrder(orderChunk);
 
   const db = connectDB() as DB;
 
-  const lasttUpdatedProduct = await db.query.product.findFirst({
+  const totalProducts = await db
+    .select({ count: count() })
+    .from(product)
+    .where(eq(product.categoryId, id));
+
+  const lastUpdatedProduct = await db.query.product.findFirst({
     orderBy: [desc(product.updatedAt)],
+    where: (product) => eq(product.categoryId, id),
     with: {
       category: {
         columns: {
@@ -156,7 +163,15 @@ export async function getAllProductsByCategoryId(
 
   const products = await db.query.product.findMany({
     orderBy: order,
-    where: (product) => eq(product.categoryId, id),
+    limit: lastUpdatedProduct ? pagination.limit - 1 : pagination.limit,
+    offset:
+      lastUpdatedProduct && pagination.offset
+        ? pagination.offset - 1
+        : pagination.offset || 0,
+    where: lastUpdatedProduct
+      ? (product) =>
+          and(eq(product.categoryId, id), ne(product.id, lastUpdatedProduct.id))
+      : (product) => eq(product.categoryId, id),
     with: {
       category: {
         columns: {
@@ -183,14 +198,22 @@ export async function getAllProductsByCategoryId(
     },
   });
 
-  return lasttUpdatedProduct
+  const productsList = lastUpdatedProduct
     ? [
-        { ...lasttUpdatedProduct, lastUpdated: true },
+        { ...lastUpdatedProduct, lastUpdated: true },
         ...products.filter((p) =>
-          lasttUpdatedProduct ? lasttUpdatedProduct.id !== p.id : true,
+          lastUpdatedProduct ? lastUpdatedProduct.id !== p.id : true,
         ),
       ]
     : products;
+
+  return {
+    products: productsList,
+    total:
+      Array.isArray(totalProducts) && totalProducts.length
+        ? totalProducts[0].count
+        : 0,
+  };
 }
 
 export async function getProductById(id: string) {

@@ -5,6 +5,7 @@ import { UserType } from "@/lib/types/user";
 import { ProductWithCategoryAndAttributeResponseType } from "@/lib/types/product";
 import { QueryOrder } from "@/lib/store/types/product";
 import { CategoryWithChildren } from "@/lib/types/category";
+import { generatePagination } from "@/lib/utils";
 
 export const initialState: IReduxAppState = {
   currentUser: null,
@@ -13,6 +14,12 @@ export const initialState: IReduxAppState = {
   nameOrder: "asc",
   priceOrder: "desc",
   category: null,
+  productPagination: {
+    limit: 5,
+    offset: 0,
+    setup: [5],
+    total: 0,
+  },
 };
 
 export const appSlice = createSlice({
@@ -50,6 +57,43 @@ export const appSlice = createSlice({
     ) => {
       state.category = payload;
     },
+
+    moveProductPage: (state, { payload }: PayloadAction<number>) => {
+      state.productPagination.offset = payload;
+    },
+
+    updateProductsPerPage: (state, { payload }: PayloadAction<number>) => {
+      state.productPagination.limit = payload;
+    },
+
+    updateProductsPaginationSetup: (
+      state,
+      { payload }: PayloadAction<Array<number>>,
+    ) => {
+      state.productPagination.setup = payload;
+    },
+
+    updatePaginationSetupWithCurrentLimit: (
+      state,
+      { payload }: PayloadAction<number>,
+    ) => {
+      if (state.productPagination.total === payload) return;
+      if (payload < 1) {
+        state.productPagination = {
+          limit: 5,
+          offset: 0,
+          setup: [5],
+          total: 0,
+        };
+        return;
+      }
+      const pagination =
+        payload > 0
+          ? generatePagination(state.productPagination.limit, payload)
+          : [5];
+      state.productPagination.setup = pagination;
+      state.productPagination.total = payload;
+    },
   },
 });
 
@@ -60,6 +104,10 @@ export const {
   setNameOrder,
   setPriceOrder,
   setCategory,
+  moveProductPage,
+  updateProductsPaginationSetup,
+  updateProductsPerPage,
+  updatePaginationSetupWithCurrentLimit,
 } = appSlice.actions;
 
 export default appSlice.reducer;

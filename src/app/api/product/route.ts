@@ -17,11 +17,14 @@ export async function GET(request: NextRequest) {
   try {
     const feature = request?.nextUrl?.searchParams.get("order");
     const categoryId = request?.nextUrl?.searchParams.get("categoryId");
+    const limit = request?.nextUrl?.searchParams.get("limit");
+    const offset = request?.nextUrl?.searchParams.get("offset");
     const slicedQuery = parseOrderQuery(feature ?? "");
 
     const products = await getAllProductsByCategoryId(
       categoryId as string,
       slicedQuery,
+      { limit: Number(limit ?? "5"), offset: Number(offset ?? "0") },
     );
 
     return NextResponse.json(

@@ -14,7 +14,7 @@ export const productApi = createApi({
   endpoints: (builder) => ({
     getProducts: builder.query<ProductsResponse, ProductsRequest>({
       query: (query) =>
-        `/product?order=name:${query.order.name},price:${query.order.price}&categoryId=${query.category}`,
+        `/product?order=name:${query.order.name},price:${query.order.price}&categoryId=${query.category}&limit=${query.limit}&offset=${query.offset}`,
       keepUnusedDataFor: 3600,
       providesTags: () => {
         return [{ type: "Product", id: "id" }];

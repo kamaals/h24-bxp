@@ -6,6 +6,7 @@ import { QueryOrder } from "@/lib/store/types/product";
 import { setNameOrder, setPriceOrder } from "@/lib/store/features/app/appSlice";
 import { cn } from "@/lib/utils";
 import { useAppSelector } from "@/lib/store/hooks";
+import ProductsPerPage from "@/components/molecules/products-per-page";
 
 function OrderButton({
   label,
@@ -78,6 +79,7 @@ function OrderTool() {
         label={"Price"}
         order={priceOrder}
       />
+      <ProductsPerPage />
     </div>
   );
 }
