@@ -1,0 +1,2180 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProductList > should match the snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="group/sidebar-wrapper has-data-[variant=inset]:bg-sidebar flex min-h-svh w-full"
+        data-slot="sidebar-wrapper"
+        style="--sidebar-width: 16rem; --sidebar-width-icon: 3rem;"
+      >
+        <div
+          class="text-card-foreground gap-6 rounded-xl py-6 shadow-sm bg-slate-100 border-0 min-h-[calc(100vh-8rem)] flex flex-col justify-between"
+          data-slot="card"
+        >
+          <div
+            class="flex-col flex gap-y-6"
+          >
+            <div
+              class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+              data-slot="card-header"
+            >
+              <div
+                class="flex flex-col md:flex-row justify-between items-start gap-4 md:items-center"
+              >
+                <div
+                  class="flex flex-col gap-2"
+                >
+                  <h2
+                    class="text-3xl font-bold flex gap-2"
+                  >
+                     / Products
+                  </h2>
+                  <div
+                    class="flex gap-4"
+                  >
+                    <div
+                      class="flex items-center gap-2"
+                    >
+                      Name
+                      <div
+                        class="flex flex-col"
+                      >
+                        <button
+                          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 px-4 py-2 has-[>svg]:px-3 h-5 border border-b-0 bg-white rounded-b-none text-slate-700"
+                          data-slot="button"
+                          data-testid="order-up-button"
+                          type="button"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="lucide lucide-chevron-up"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="m18 15-6-6-6 6"
+                            />
+                          </svg>
+                        </button>
+                        <button
+                          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 px-4 py-2 has-[>svg]:px-3 h-5 border border-t-0 bg-white rounded-t-none text-slate-300"
+                          data-slot="button"
+                          data-testid="order-down-button"
+                          type="button"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="lucide lucide-chevron-down"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="m6 9 6 6 6-6"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center gap-2"
+                    >
+                      Price
+                      <div
+                        class="flex flex-col"
+                      >
+                        <button
+                          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 px-4 py-2 has-[>svg]:px-3 h-5 border border-b-0 bg-white rounded-b-none text-slate-300"
+                          data-slot="button"
+                          data-testid="order-up-button"
+                          type="button"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="lucide lucide-chevron-up"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="m18 15-6-6-6 6"
+                            />
+                          </svg>
+                        </button>
+                        <button
+                          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 px-4 py-2 has-[>svg]:px-3 h-5 border border-t-0 bg-white rounded-t-none text-slate-700"
+                          data-slot="button"
+                          data-testid="order-down-button"
+                          type="button"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="lucide lucide-chevron-down"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="m6 9 6 6 6-6"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div>
+                      <button
+                        aria-autocomplete="none"
+                        aria-controls="radix-«r0»"
+                        aria-expanded="false"
+                        class="border-input data-[placeholder]:text-muted-foreground [&_svg:not([class*='text-'])]:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 dark:hover:bg-input/50 flex w-fit items-center justify-between gap-2 rounded-md border bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
+                        data-size="default"
+                        data-slot="select-trigger"
+                        data-state="closed"
+                        dir="ltr"
+                        role="combobox"
+                        type="button"
+                      >
+                        <span
+                          data-slot="select-value"
+                          style="pointer-events: none;"
+                        >
+                          5
+                        </span>
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-chevron-down size-4 opacity-50"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m6 9 6 6 6-6"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                  data-slot="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-plus"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 12h14"
+                    />
+                    <path
+                      d="M12 5v14"
+                    />
+                  </svg>
+                  Add Product
+                </button>
+              </div>
+            </div>
+            <div
+              class="px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4"
+              data-slot="card-content"
+            >
+              <article
+                class="flex flex-col justify-between p-4 bg-white rounded-[2rem] shadow-md overflow-y-auto max-w-2xl"
+              >
+                <div
+                  class="space-y-4 "
+                >
+                  <div
+                    class="relative h-48 rounded-3xl overflow-hidden shadow-sm"
+                  >
+                    <span
+                      class="absolute text-xs px-4 p-3 inline-block bg-gradient-to-b from-black/50  to-[rgba(0,0,0,0)] to-100% text-white z-30 rounded-br-3xl "
+                    >
+                      Last updated
+                    </span>
+                    <a
+                      href="/dashboard/product/5a471e4a-4c9d-4708-9313-74d7afbd1d0b"
+                    >
+                      <img
+                        alt="Noval"
+                        data-nimg="fill"
+                        decoding="async"
+                        loading="lazy"
+                        sizes="100vw"
+                        src="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=3840&q=75"
+                        srcset="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=3840&q=75 3840w"
+                        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+                      />
+                    </a>
+                    <header
+                      class="flex items-end pb-4 absolute left-0 bottom-0 right-0 h-20 bg-gradient-to-t from-black/90  to-[rgba(0,0,0,0)] to-100% text-white px-6"
+                    >
+                      <div
+                        class="flex flex-col"
+                      >
+                        <h3
+                          class="font-black text-sm -mb-0.5 pb-0 underline"
+                        >
+                          Noval
+                        </h3>
+                        <span
+                          class="text-slate-400 text-xs"
+                        >
+                          One
+                        </span>
+                      </div>
+                    </header>
+                  </div>
+                  <section
+                    class="p-2"
+                  >
+                    <div
+                      class="flex flex-col flex-1 overflow-hidden pb-1 border-b mb-2"
+                    >
+                      <a
+                        href="/dashboard/product/5a471e4a-4c9d-4708-9313-74d7afbd1d0b"
+                      >
+                        <span
+                          class="font-bold text-lg underline"
+                        >
+                          Noval
+                        </span>
+                      </a>
+                      <span
+                        class="text-md text-slate-700"
+                      >
+                        27188.00
+                         $
+                      </span>
+                    </div>
+                    <div
+                      class="grid grid-cols-2 gap-2 flex-wrap"
+                    >
+                      <span
+                        class="rounded-lg text-xs p-2 inline-block bg-emerald-100"
+                      >
+                        <span
+                          class="flex gap-1"
+                        >
+                          <span
+                            class="font-bold"
+                          >
+                            PP
+                            : 
+                          </span>
+                          <span>
+                            Def
+                          </span>
+                        </span>
+                        <span>
+                          text
+                        </span>
+                      </span>
+                    </div>
+                    <p
+                      class="text-md text-slate-500 mt-4"
+                    >
+                      Nunc eget diam lacinia, fringilla justo sit amet, sodales nisl. Mauris nec tincidunt eros, vitae pulvinar ligula.
+                    </p>
+                  </section>
+                </div>
+                <footer
+                  class="flex justify-between gap-2"
+                >
+                  <div
+                    class="w-50"
+                  >
+                    <div
+                      class="w-full min-h-8 px-2 py-1.5 flex items-center overflow-hidden relative rounded-md"
+                    >
+                      <div
+                        aria-label="Delete"
+                        class="absolute z-1 flex items-center justify-start w-full text-sm gap-2"
+                        data-testid="action-confirm-trigger"
+                        style="opacity: 0; transform: scale(0);"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-trash2 lucide-trash-2 w-4 h-4 text-red-600"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3 6h18"
+                          />
+                          <path
+                            d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+                          />
+                          <path
+                            d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+                          />
+                          <line
+                            x1="10"
+                            x2="10"
+                            y1="11"
+                            y2="17"
+                          />
+                          <line
+                            x1="14"
+                            x2="14"
+                            y1="11"
+                            y2="17"
+                          />
+                        </svg>
+                        Delete
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                    data-slot="button"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="lucide lucide-square-pen"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                      />
+                      <path
+                        d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
+                      />
+                    </svg>
+                    Edit
+                  </button>
+                </footer>
+              </article>
+              <article
+                class="flex flex-col justify-between p-4 bg-white rounded-[2rem] shadow-md overflow-y-auto max-w-2xl"
+              >
+                <div
+                  class="space-y-4 "
+                >
+                  <div
+                    class="relative h-48 rounded-3xl overflow-hidden shadow-sm"
+                  >
+                    <a
+                      href="/dashboard/product/75e33945-4790-4534-acf9-752bcba2128a"
+                    >
+                      <img
+                        alt="Nill"
+                        data-nimg="fill"
+                        decoding="async"
+                        loading="lazy"
+                        sizes="100vw"
+                        src="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=3840&q=75"
+                        srcset="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=3840&q=75 3840w"
+                        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+                      />
+                    </a>
+                    <header
+                      class="flex items-end pb-4 absolute left-0 bottom-0 right-0 h-20 bg-gradient-to-t from-black/90  to-[rgba(0,0,0,0)] to-100% text-white px-6"
+                    >
+                      <div
+                        class="flex flex-col"
+                      >
+                        <h3
+                          class="font-black text-sm -mb-0.5 pb-0 underline"
+                        >
+                          Nill
+                        </h3>
+                        <span
+                          class="text-slate-400 text-xs"
+                        >
+                          One
+                        </span>
+                      </div>
+                    </header>
+                  </div>
+                  <section
+                    class="p-2"
+                  >
+                    <div
+                      class="flex flex-col flex-1 overflow-hidden pb-1 border-b mb-2"
+                    >
+                      <a
+                        href="/dashboard/product/75e33945-4790-4534-acf9-752bcba2128a"
+                      >
+                        <span
+                          class="font-bold text-lg underline"
+                        >
+                          Nill
+                        </span>
+                      </a>
+                      <span
+                        class="text-md text-slate-700"
+                      >
+                        48432.00
+                         $
+                      </span>
+                    </div>
+                    <div
+                      class="grid grid-cols-2 gap-2 flex-wrap"
+                    />
+                    <p
+                      class="text-md text-slate-500 mt-4"
+                    >
+                      Nunc eget diam lacinia, fringilla justo sit amet, sodales nisl. Mauris nec tincidunt eros, vitae pulvinar ligula.
+                    </p>
+                  </section>
+                </div>
+                <footer
+                  class="flex justify-between gap-2"
+                >
+                  <div
+                    class="w-50"
+                  >
+                    <div
+                      class="w-full min-h-8 px-2 py-1.5 flex items-center overflow-hidden relative rounded-md"
+                    >
+                      <div
+                        aria-label="Delete"
+                        class="absolute z-1 flex items-center justify-start w-full text-sm gap-2"
+                        data-testid="action-confirm-trigger"
+                        style="opacity: 0; transform: scale(0);"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-trash2 lucide-trash-2 w-4 h-4 text-red-600"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3 6h18"
+                          />
+                          <path
+                            d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+                          />
+                          <path
+                            d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+                          />
+                          <line
+                            x1="10"
+                            x2="10"
+                            y1="11"
+                            y2="17"
+                          />
+                          <line
+                            x1="14"
+                            x2="14"
+                            y1="11"
+                            y2="17"
+                          />
+                        </svg>
+                        Delete
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                    data-slot="button"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="lucide lucide-square-pen"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                      />
+                      <path
+                        d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
+                      />
+                    </svg>
+                    Edit
+                  </button>
+                </footer>
+              </article>
+              <article
+                class="flex flex-col justify-between p-4 bg-white rounded-[2rem] shadow-md overflow-y-auto max-w-2xl"
+              >
+                <div
+                  class="space-y-4 "
+                >
+                  <div
+                    class="relative h-48 rounded-3xl overflow-hidden shadow-sm"
+                  >
+                    <a
+                      href="/dashboard/product/b472a040-abcf-48ec-a001-336df279e6e0"
+                    >
+                      <img
+                        alt="Planatarium"
+                        data-nimg="fill"
+                        decoding="async"
+                        loading="lazy"
+                        sizes="100vw"
+                        src="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=3840&q=75"
+                        srcset="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=3840&q=75 3840w"
+                        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+                      />
+                    </a>
+                    <header
+                      class="flex items-end pb-4 absolute left-0 bottom-0 right-0 h-20 bg-gradient-to-t from-black/90  to-[rgba(0,0,0,0)] to-100% text-white px-6"
+                    >
+                      <div
+                        class="flex flex-col"
+                      >
+                        <h3
+                          class="font-black text-sm -mb-0.5 pb-0 underline"
+                        >
+                          Planatarium
+                        </h3>
+                        <span
+                          class="text-slate-400 text-xs"
+                        >
+                          One
+                        </span>
+                      </div>
+                    </header>
+                  </div>
+                  <section
+                    class="p-2"
+                  >
+                    <div
+                      class="flex flex-col flex-1 overflow-hidden pb-1 border-b mb-2"
+                    >
+                      <a
+                        href="/dashboard/product/b472a040-abcf-48ec-a001-336df279e6e0"
+                      >
+                        <span
+                          class="font-bold text-lg underline"
+                        >
+                          Planatarium
+                        </span>
+                      </a>
+                      <span
+                        class="text-md text-slate-700"
+                      >
+                        3746.00
+                         $
+                      </span>
+                    </div>
+                    <div
+                      class="grid grid-cols-2 gap-2 flex-wrap"
+                    />
+                    <p
+                      class="text-md text-slate-500 mt-4"
+                    >
+                      Nunc eget diam lacinia, fringilla justo sit amet, sodales nisl. Mauris nec tincidunt eros, vitae pulvinar ligula.
+                    </p>
+                  </section>
+                </div>
+                <footer
+                  class="flex justify-between gap-2"
+                >
+                  <div
+                    class="w-50"
+                  >
+                    <div
+                      class="w-full min-h-8 px-2 py-1.5 flex items-center overflow-hidden relative rounded-md"
+                    >
+                      <div
+                        aria-label="Delete"
+                        class="absolute z-1 flex items-center justify-start w-full text-sm gap-2"
+                        data-testid="action-confirm-trigger"
+                        style="opacity: 0; transform: scale(0);"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-trash2 lucide-trash-2 w-4 h-4 text-red-600"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3 6h18"
+                          />
+                          <path
+                            d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+                          />
+                          <path
+                            d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+                          />
+                          <line
+                            x1="10"
+                            x2="10"
+                            y1="11"
+                            y2="17"
+                          />
+                          <line
+                            x1="14"
+                            x2="14"
+                            y1="11"
+                            y2="17"
+                          />
+                        </svg>
+                        Delete
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                    data-slot="button"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="lucide lucide-square-pen"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                      />
+                      <path
+                        d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
+                      />
+                    </svg>
+                    Edit
+                  </button>
+                </footer>
+              </article>
+              <article
+                class="flex flex-col justify-between p-4 bg-white rounded-[2rem] shadow-md overflow-y-auto max-w-2xl"
+              >
+                <div
+                  class="space-y-4 "
+                >
+                  <div
+                    class="relative h-48 rounded-3xl overflow-hidden shadow-sm"
+                  >
+                    <a
+                      href="/dashboard/product/0abd6bbf-46e5-489a-a392-d03e4159c2bb"
+                    >
+                      <img
+                        alt="Prada"
+                        data-nimg="fill"
+                        decoding="async"
+                        loading="lazy"
+                        sizes="100vw"
+                        src="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=3840&q=75"
+                        srcset="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=3840&q=75 3840w"
+                        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+                      />
+                    </a>
+                    <header
+                      class="flex items-end pb-4 absolute left-0 bottom-0 right-0 h-20 bg-gradient-to-t from-black/90  to-[rgba(0,0,0,0)] to-100% text-white px-6"
+                    >
+                      <div
+                        class="flex flex-col"
+                      >
+                        <h3
+                          class="font-black text-sm -mb-0.5 pb-0 underline"
+                        >
+                          Prada
+                        </h3>
+                        <span
+                          class="text-slate-400 text-xs"
+                        >
+                          One
+                        </span>
+                      </div>
+                    </header>
+                  </div>
+                  <section
+                    class="p-2"
+                  >
+                    <div
+                      class="flex flex-col flex-1 overflow-hidden pb-1 border-b mb-2"
+                    >
+                      <a
+                        href="/dashboard/product/0abd6bbf-46e5-489a-a392-d03e4159c2bb"
+                      >
+                        <span
+                          class="font-bold text-lg underline"
+                        >
+                          Prada
+                        </span>
+                      </a>
+                      <span
+                        class="text-md text-slate-700"
+                      >
+                        24740.00
+                         $
+                      </span>
+                    </div>
+                    <div
+                      class="grid grid-cols-2 gap-2 flex-wrap"
+                    />
+                    <p
+                      class="text-md text-slate-500 mt-4"
+                    >
+                      Nunc eget diam lacinia, fringilla justo sit amet, sodales nisl. Mauris nec tincidunt eros, vitae pulvinar ligula.
+                    </p>
+                  </section>
+                </div>
+                <footer
+                  class="flex justify-between gap-2"
+                >
+                  <div
+                    class="w-50"
+                  >
+                    <div
+                      class="w-full min-h-8 px-2 py-1.5 flex items-center overflow-hidden relative rounded-md"
+                    >
+                      <div
+                        aria-label="Delete"
+                        class="absolute z-1 flex items-center justify-start w-full text-sm gap-2"
+                        data-testid="action-confirm-trigger"
+                        style="opacity: 0; transform: scale(0);"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-trash2 lucide-trash-2 w-4 h-4 text-red-600"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3 6h18"
+                          />
+                          <path
+                            d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+                          />
+                          <path
+                            d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+                          />
+                          <line
+                            x1="10"
+                            x2="10"
+                            y1="11"
+                            y2="17"
+                          />
+                          <line
+                            x1="14"
+                            x2="14"
+                            y1="11"
+                            y2="17"
+                          />
+                        </svg>
+                        Delete
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                    data-slot="button"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="lucide lucide-square-pen"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                      />
+                      <path
+                        d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
+                      />
+                    </svg>
+                    Edit
+                  </button>
+                </footer>
+              </article>
+              <article
+                class="flex flex-col justify-between p-4 bg-white rounded-[2rem] shadow-md overflow-y-auto max-w-2xl"
+              >
+                <div
+                  class="space-y-4 "
+                >
+                  <div
+                    class="relative h-48 rounded-3xl overflow-hidden shadow-sm"
+                  >
+                    <a
+                      href="/dashboard/product/28fa70c3-26cd-40e9-a0a9-7d9cefca0068"
+                    >
+                      <img
+                        alt="Slam"
+                        data-nimg="fill"
+                        decoding="async"
+                        loading="lazy"
+                        sizes="100vw"
+                        src="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=3840&q=75"
+                        srcset="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=3840&q=75 3840w"
+                        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+                      />
+                    </a>
+                    <header
+                      class="flex items-end pb-4 absolute left-0 bottom-0 right-0 h-20 bg-gradient-to-t from-black/90  to-[rgba(0,0,0,0)] to-100% text-white px-6"
+                    >
+                      <div
+                        class="flex flex-col"
+                      >
+                        <h3
+                          class="font-black text-sm -mb-0.5 pb-0 underline"
+                        >
+                          Slam
+                        </h3>
+                        <span
+                          class="text-slate-400 text-xs"
+                        >
+                          One
+                        </span>
+                      </div>
+                    </header>
+                  </div>
+                  <section
+                    class="p-2"
+                  >
+                    <div
+                      class="flex flex-col flex-1 overflow-hidden pb-1 border-b mb-2"
+                    >
+                      <a
+                        href="/dashboard/product/28fa70c3-26cd-40e9-a0a9-7d9cefca0068"
+                      >
+                        <span
+                          class="font-bold text-lg underline"
+                        >
+                          Slam
+                        </span>
+                      </a>
+                      <span
+                        class="text-md text-slate-700"
+                      >
+                        36129.00
+                         $
+                      </span>
+                    </div>
+                    <div
+                      class="grid grid-cols-2 gap-2 flex-wrap"
+                    />
+                    <p
+                      class="text-md text-slate-500 mt-4"
+                    >
+                      Nunc eget diam lacinia, fringilla justo sit amet, sodales nisl. Mauris nec tincidunt eros, vitae pulvinar ligula.
+                    </p>
+                  </section>
+                </div>
+                <footer
+                  class="flex justify-between gap-2"
+                >
+                  <div
+                    class="w-50"
+                  >
+                    <div
+                      class="w-full min-h-8 px-2 py-1.5 flex items-center overflow-hidden relative rounded-md"
+                    >
+                      <div
+                        aria-label="Delete"
+                        class="absolute z-1 flex items-center justify-start w-full text-sm gap-2"
+                        data-testid="action-confirm-trigger"
+                        style="opacity: 0; transform: scale(0);"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-trash2 lucide-trash-2 w-4 h-4 text-red-600"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3 6h18"
+                          />
+                          <path
+                            d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+                          />
+                          <path
+                            d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+                          />
+                          <line
+                            x1="10"
+                            x2="10"
+                            y1="11"
+                            y2="17"
+                          />
+                          <line
+                            x1="14"
+                            x2="14"
+                            y1="11"
+                            y2="17"
+                          />
+                        </svg>
+                        Delete
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                    data-slot="button"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="lucide lucide-square-pen"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                      />
+                      <path
+                        d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
+                      />
+                    </svg>
+                    Edit
+                  </button>
+                </footer>
+              </article>
+            </div>
+          </div>
+          <div
+            class="flex items-center px-6 [.border-t]:pt-6"
+            data-slot="card-footer"
+          >
+            <div>
+              <button
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 rounded-r-none border-r-0 border-l rounded-l-3xl"
+                data-slot="button"
+                disabled=""
+              >
+                1
+              </button>
+              <button
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 rounded-r-none rounded-l-none border-l-0 border-r-0"
+                data-slot="button"
+              >
+                2
+              </button>
+              <button
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 rounded-l-none border-l-0 border-r rounded-r-3xl"
+                data-slot="button"
+              >
+                3
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="group/sidebar-wrapper has-data-[variant=inset]:bg-sidebar flex min-h-svh w-full"
+      data-slot="sidebar-wrapper"
+      style="--sidebar-width: 16rem; --sidebar-width-icon: 3rem;"
+    >
+      <div
+        class="text-card-foreground gap-6 rounded-xl py-6 shadow-sm bg-slate-100 border-0 min-h-[calc(100vh-8rem)] flex flex-col justify-between"
+        data-slot="card"
+      >
+        <div
+          class="flex-col flex gap-y-6"
+        >
+          <div
+            class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+            data-slot="card-header"
+          >
+            <div
+              class="flex flex-col md:flex-row justify-between items-start gap-4 md:items-center"
+            >
+              <div
+                class="flex flex-col gap-2"
+              >
+                <h2
+                  class="text-3xl font-bold flex gap-2"
+                >
+                   / Products
+                </h2>
+                <div
+                  class="flex gap-4"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    Name
+                    <div
+                      class="flex flex-col"
+                    >
+                      <button
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 px-4 py-2 has-[>svg]:px-3 h-5 border border-b-0 bg-white rounded-b-none text-slate-700"
+                        data-slot="button"
+                        data-testid="order-up-button"
+                        type="button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-chevron-up"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m18 15-6-6-6 6"
+                          />
+                        </svg>
+                      </button>
+                      <button
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 px-4 py-2 has-[>svg]:px-3 h-5 border border-t-0 bg-white rounded-t-none text-slate-300"
+                        data-slot="button"
+                        data-testid="order-down-button"
+                        type="button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-chevron-down"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m6 9 6 6 6-6"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    Price
+                    <div
+                      class="flex flex-col"
+                    >
+                      <button
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 px-4 py-2 has-[>svg]:px-3 h-5 border border-b-0 bg-white rounded-b-none text-slate-300"
+                        data-slot="button"
+                        data-testid="order-up-button"
+                        type="button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-chevron-up"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m18 15-6-6-6 6"
+                          />
+                        </svg>
+                      </button>
+                      <button
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 px-4 py-2 has-[>svg]:px-3 h-5 border border-t-0 bg-white rounded-t-none text-slate-700"
+                        data-slot="button"
+                        data-testid="order-down-button"
+                        type="button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-chevron-down"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m6 9 6 6 6-6"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      aria-autocomplete="none"
+                      aria-controls="radix-«r0»"
+                      aria-expanded="false"
+                      class="border-input data-[placeholder]:text-muted-foreground [&_svg:not([class*='text-'])]:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 dark:hover:bg-input/50 flex w-fit items-center justify-between gap-2 rounded-md border bg-transparent px-3 py-2 text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
+                      data-size="default"
+                      data-slot="select-trigger"
+                      data-state="closed"
+                      dir="ltr"
+                      role="combobox"
+                      type="button"
+                    >
+                      <span
+                        data-slot="select-value"
+                        style="pointer-events: none;"
+                      >
+                        5
+                      </span>
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-chevron-down size-4 opacity-50"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m6 9 6 6 6-6"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                data-slot="button"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-plus"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 12h14"
+                  />
+                  <path
+                    d="M12 5v14"
+                  />
+                </svg>
+                Add Product
+              </button>
+            </div>
+          </div>
+          <div
+            class="px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4"
+            data-slot="card-content"
+          >
+            <article
+              class="flex flex-col justify-between p-4 bg-white rounded-[2rem] shadow-md overflow-y-auto max-w-2xl"
+            >
+              <div
+                class="space-y-4 "
+              >
+                <div
+                  class="relative h-48 rounded-3xl overflow-hidden shadow-sm"
+                >
+                  <span
+                    class="absolute text-xs px-4 p-3 inline-block bg-gradient-to-b from-black/50  to-[rgba(0,0,0,0)] to-100% text-white z-30 rounded-br-3xl "
+                  >
+                    Last updated
+                  </span>
+                  <a
+                    href="/dashboard/product/5a471e4a-4c9d-4708-9313-74d7afbd1d0b"
+                  >
+                    <img
+                      alt="Noval"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="100vw"
+                      src="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=3840&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F63%2F400%2F300&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+                    />
+                  </a>
+                  <header
+                    class="flex items-end pb-4 absolute left-0 bottom-0 right-0 h-20 bg-gradient-to-t from-black/90  to-[rgba(0,0,0,0)] to-100% text-white px-6"
+                  >
+                    <div
+                      class="flex flex-col"
+                    >
+                      <h3
+                        class="font-black text-sm -mb-0.5 pb-0 underline"
+                      >
+                        Noval
+                      </h3>
+                      <span
+                        class="text-slate-400 text-xs"
+                      >
+                        One
+                      </span>
+                    </div>
+                  </header>
+                </div>
+                <section
+                  class="p-2"
+                >
+                  <div
+                    class="flex flex-col flex-1 overflow-hidden pb-1 border-b mb-2"
+                  >
+                    <a
+                      href="/dashboard/product/5a471e4a-4c9d-4708-9313-74d7afbd1d0b"
+                    >
+                      <span
+                        class="font-bold text-lg underline"
+                      >
+                        Noval
+                      </span>
+                    </a>
+                    <span
+                      class="text-md text-slate-700"
+                    >
+                      27188.00
+                       $
+                    </span>
+                  </div>
+                  <div
+                    class="grid grid-cols-2 gap-2 flex-wrap"
+                  >
+                    <span
+                      class="rounded-lg text-xs p-2 inline-block bg-emerald-100"
+                    >
+                      <span
+                        class="flex gap-1"
+                      >
+                        <span
+                          class="font-bold"
+                        >
+                          PP
+                          : 
+                        </span>
+                        <span>
+                          Def
+                        </span>
+                      </span>
+                      <span>
+                        text
+                      </span>
+                    </span>
+                  </div>
+                  <p
+                    class="text-md text-slate-500 mt-4"
+                  >
+                    Nunc eget diam lacinia, fringilla justo sit amet, sodales nisl. Mauris nec tincidunt eros, vitae pulvinar ligula.
+                  </p>
+                </section>
+              </div>
+              <footer
+                class="flex justify-between gap-2"
+              >
+                <div
+                  class="w-50"
+                >
+                  <div
+                    class="w-full min-h-8 px-2 py-1.5 flex items-center overflow-hidden relative rounded-md"
+                  >
+                    <div
+                      aria-label="Delete"
+                      class="absolute z-1 flex items-center justify-start w-full text-sm gap-2"
+                      data-testid="action-confirm-trigger"
+                      style="opacity: 0; transform: scale(0);"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-trash2 lucide-trash-2 w-4 h-4 text-red-600"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3 6h18"
+                        />
+                        <path
+                          d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+                        />
+                        <path
+                          d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+                        />
+                        <line
+                          x1="10"
+                          x2="10"
+                          y1="11"
+                          y2="17"
+                        />
+                        <line
+                          x1="14"
+                          x2="14"
+                          y1="11"
+                          y2="17"
+                        />
+                      </svg>
+                      Delete
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                  data-slot="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-square-pen"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                    />
+                    <path
+                      d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
+                    />
+                  </svg>
+                  Edit
+                </button>
+              </footer>
+            </article>
+            <article
+              class="flex flex-col justify-between p-4 bg-white rounded-[2rem] shadow-md overflow-y-auto max-w-2xl"
+            >
+              <div
+                class="space-y-4 "
+              >
+                <div
+                  class="relative h-48 rounded-3xl overflow-hidden shadow-sm"
+                >
+                  <a
+                    href="/dashboard/product/75e33945-4790-4534-acf9-752bcba2128a"
+                  >
+                    <img
+                      alt="Nill"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="100vw"
+                      src="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=3840&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F87%2F400%2F300&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+                    />
+                  </a>
+                  <header
+                    class="flex items-end pb-4 absolute left-0 bottom-0 right-0 h-20 bg-gradient-to-t from-black/90  to-[rgba(0,0,0,0)] to-100% text-white px-6"
+                  >
+                    <div
+                      class="flex flex-col"
+                    >
+                      <h3
+                        class="font-black text-sm -mb-0.5 pb-0 underline"
+                      >
+                        Nill
+                      </h3>
+                      <span
+                        class="text-slate-400 text-xs"
+                      >
+                        One
+                      </span>
+                    </div>
+                  </header>
+                </div>
+                <section
+                  class="p-2"
+                >
+                  <div
+                    class="flex flex-col flex-1 overflow-hidden pb-1 border-b mb-2"
+                  >
+                    <a
+                      href="/dashboard/product/75e33945-4790-4534-acf9-752bcba2128a"
+                    >
+                      <span
+                        class="font-bold text-lg underline"
+                      >
+                        Nill
+                      </span>
+                    </a>
+                    <span
+                      class="text-md text-slate-700"
+                    >
+                      48432.00
+                       $
+                    </span>
+                  </div>
+                  <div
+                    class="grid grid-cols-2 gap-2 flex-wrap"
+                  />
+                  <p
+                    class="text-md text-slate-500 mt-4"
+                  >
+                    Nunc eget diam lacinia, fringilla justo sit amet, sodales nisl. Mauris nec tincidunt eros, vitae pulvinar ligula.
+                  </p>
+                </section>
+              </div>
+              <footer
+                class="flex justify-between gap-2"
+              >
+                <div
+                  class="w-50"
+                >
+                  <div
+                    class="w-full min-h-8 px-2 py-1.5 flex items-center overflow-hidden relative rounded-md"
+                  >
+                    <div
+                      aria-label="Delete"
+                      class="absolute z-1 flex items-center justify-start w-full text-sm gap-2"
+                      data-testid="action-confirm-trigger"
+                      style="opacity: 0; transform: scale(0);"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-trash2 lucide-trash-2 w-4 h-4 text-red-600"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3 6h18"
+                        />
+                        <path
+                          d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+                        />
+                        <path
+                          d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+                        />
+                        <line
+                          x1="10"
+                          x2="10"
+                          y1="11"
+                          y2="17"
+                        />
+                        <line
+                          x1="14"
+                          x2="14"
+                          y1="11"
+                          y2="17"
+                        />
+                      </svg>
+                      Delete
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                  data-slot="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-square-pen"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                    />
+                    <path
+                      d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
+                    />
+                  </svg>
+                  Edit
+                </button>
+              </footer>
+            </article>
+            <article
+              class="flex flex-col justify-between p-4 bg-white rounded-[2rem] shadow-md overflow-y-auto max-w-2xl"
+            >
+              <div
+                class="space-y-4 "
+              >
+                <div
+                  class="relative h-48 rounded-3xl overflow-hidden shadow-sm"
+                >
+                  <a
+                    href="/dashboard/product/b472a040-abcf-48ec-a001-336df279e6e0"
+                  >
+                    <img
+                      alt="Planatarium"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="100vw"
+                      src="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=3840&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F153%2F400%2F300&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+                    />
+                  </a>
+                  <header
+                    class="flex items-end pb-4 absolute left-0 bottom-0 right-0 h-20 bg-gradient-to-t from-black/90  to-[rgba(0,0,0,0)] to-100% text-white px-6"
+                  >
+                    <div
+                      class="flex flex-col"
+                    >
+                      <h3
+                        class="font-black text-sm -mb-0.5 pb-0 underline"
+                      >
+                        Planatarium
+                      </h3>
+                      <span
+                        class="text-slate-400 text-xs"
+                      >
+                        One
+                      </span>
+                    </div>
+                  </header>
+                </div>
+                <section
+                  class="p-2"
+                >
+                  <div
+                    class="flex flex-col flex-1 overflow-hidden pb-1 border-b mb-2"
+                  >
+                    <a
+                      href="/dashboard/product/b472a040-abcf-48ec-a001-336df279e6e0"
+                    >
+                      <span
+                        class="font-bold text-lg underline"
+                      >
+                        Planatarium
+                      </span>
+                    </a>
+                    <span
+                      class="text-md text-slate-700"
+                    >
+                      3746.00
+                       $
+                    </span>
+                  </div>
+                  <div
+                    class="grid grid-cols-2 gap-2 flex-wrap"
+                  />
+                  <p
+                    class="text-md text-slate-500 mt-4"
+                  >
+                    Nunc eget diam lacinia, fringilla justo sit amet, sodales nisl. Mauris nec tincidunt eros, vitae pulvinar ligula.
+                  </p>
+                </section>
+              </div>
+              <footer
+                class="flex justify-between gap-2"
+              >
+                <div
+                  class="w-50"
+                >
+                  <div
+                    class="w-full min-h-8 px-2 py-1.5 flex items-center overflow-hidden relative rounded-md"
+                  >
+                    <div
+                      aria-label="Delete"
+                      class="absolute z-1 flex items-center justify-start w-full text-sm gap-2"
+                      data-testid="action-confirm-trigger"
+                      style="opacity: 0; transform: scale(0);"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-trash2 lucide-trash-2 w-4 h-4 text-red-600"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3 6h18"
+                        />
+                        <path
+                          d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+                        />
+                        <path
+                          d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+                        />
+                        <line
+                          x1="10"
+                          x2="10"
+                          y1="11"
+                          y2="17"
+                        />
+                        <line
+                          x1="14"
+                          x2="14"
+                          y1="11"
+                          y2="17"
+                        />
+                      </svg>
+                      Delete
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                  data-slot="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-square-pen"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                    />
+                    <path
+                      d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
+                    />
+                  </svg>
+                  Edit
+                </button>
+              </footer>
+            </article>
+            <article
+              class="flex flex-col justify-between p-4 bg-white rounded-[2rem] shadow-md overflow-y-auto max-w-2xl"
+            >
+              <div
+                class="space-y-4 "
+              >
+                <div
+                  class="relative h-48 rounded-3xl overflow-hidden shadow-sm"
+                >
+                  <a
+                    href="/dashboard/product/0abd6bbf-46e5-489a-a392-d03e4159c2bb"
+                  >
+                    <img
+                      alt="Prada"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="100vw"
+                      src="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=3840&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F155%2F400%2F300&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+                    />
+                  </a>
+                  <header
+                    class="flex items-end pb-4 absolute left-0 bottom-0 right-0 h-20 bg-gradient-to-t from-black/90  to-[rgba(0,0,0,0)] to-100% text-white px-6"
+                  >
+                    <div
+                      class="flex flex-col"
+                    >
+                      <h3
+                        class="font-black text-sm -mb-0.5 pb-0 underline"
+                      >
+                        Prada
+                      </h3>
+                      <span
+                        class="text-slate-400 text-xs"
+                      >
+                        One
+                      </span>
+                    </div>
+                  </header>
+                </div>
+                <section
+                  class="p-2"
+                >
+                  <div
+                    class="flex flex-col flex-1 overflow-hidden pb-1 border-b mb-2"
+                  >
+                    <a
+                      href="/dashboard/product/0abd6bbf-46e5-489a-a392-d03e4159c2bb"
+                    >
+                      <span
+                        class="font-bold text-lg underline"
+                      >
+                        Prada
+                      </span>
+                    </a>
+                    <span
+                      class="text-md text-slate-700"
+                    >
+                      24740.00
+                       $
+                    </span>
+                  </div>
+                  <div
+                    class="grid grid-cols-2 gap-2 flex-wrap"
+                  />
+                  <p
+                    class="text-md text-slate-500 mt-4"
+                  >
+                    Nunc eget diam lacinia, fringilla justo sit amet, sodales nisl. Mauris nec tincidunt eros, vitae pulvinar ligula.
+                  </p>
+                </section>
+              </div>
+              <footer
+                class="flex justify-between gap-2"
+              >
+                <div
+                  class="w-50"
+                >
+                  <div
+                    class="w-full min-h-8 px-2 py-1.5 flex items-center overflow-hidden relative rounded-md"
+                  >
+                    <div
+                      aria-label="Delete"
+                      class="absolute z-1 flex items-center justify-start w-full text-sm gap-2"
+                      data-testid="action-confirm-trigger"
+                      style="opacity: 0; transform: scale(0);"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-trash2 lucide-trash-2 w-4 h-4 text-red-600"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3 6h18"
+                        />
+                        <path
+                          d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+                        />
+                        <path
+                          d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+                        />
+                        <line
+                          x1="10"
+                          x2="10"
+                          y1="11"
+                          y2="17"
+                        />
+                        <line
+                          x1="14"
+                          x2="14"
+                          y1="11"
+                          y2="17"
+                        />
+                      </svg>
+                      Delete
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                  data-slot="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-square-pen"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                    />
+                    <path
+                      d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
+                    />
+                  </svg>
+                  Edit
+                </button>
+              </footer>
+            </article>
+            <article
+              class="flex flex-col justify-between p-4 bg-white rounded-[2rem] shadow-md overflow-y-auto max-w-2xl"
+            >
+              <div
+                class="space-y-4 "
+              >
+                <div
+                  class="relative h-48 rounded-3xl overflow-hidden shadow-sm"
+                >
+                  <a
+                    href="/dashboard/product/28fa70c3-26cd-40e9-a0a9-7d9cefca0068"
+                  >
+                    <img
+                      alt="Slam"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="100vw"
+                      src="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=3840&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fpicsum.photos%2Fid%2F112%2F400%2F300&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+                    />
+                  </a>
+                  <header
+                    class="flex items-end pb-4 absolute left-0 bottom-0 right-0 h-20 bg-gradient-to-t from-black/90  to-[rgba(0,0,0,0)] to-100% text-white px-6"
+                  >
+                    <div
+                      class="flex flex-col"
+                    >
+                      <h3
+                        class="font-black text-sm -mb-0.5 pb-0 underline"
+                      >
+                        Slam
+                      </h3>
+                      <span
+                        class="text-slate-400 text-xs"
+                      >
+                        One
+                      </span>
+                    </div>
+                  </header>
+                </div>
+                <section
+                  class="p-2"
+                >
+                  <div
+                    class="flex flex-col flex-1 overflow-hidden pb-1 border-b mb-2"
+                  >
+                    <a
+                      href="/dashboard/product/28fa70c3-26cd-40e9-a0a9-7d9cefca0068"
+                    >
+                      <span
+                        class="font-bold text-lg underline"
+                      >
+                        Slam
+                      </span>
+                    </a>
+                    <span
+                      class="text-md text-slate-700"
+                    >
+                      36129.00
+                       $
+                    </span>
+                  </div>
+                  <div
+                    class="grid grid-cols-2 gap-2 flex-wrap"
+                  />
+                  <p
+                    class="text-md text-slate-500 mt-4"
+                  >
+                    Nunc eget diam lacinia, fringilla justo sit amet, sodales nisl. Mauris nec tincidunt eros, vitae pulvinar ligula.
+                  </p>
+                </section>
+              </div>
+              <footer
+                class="flex justify-between gap-2"
+              >
+                <div
+                  class="w-50"
+                >
+                  <div
+                    class="w-full min-h-8 px-2 py-1.5 flex items-center overflow-hidden relative rounded-md"
+                  >
+                    <div
+                      aria-label="Delete"
+                      class="absolute z-1 flex items-center justify-start w-full text-sm gap-2"
+                      data-testid="action-confirm-trigger"
+                      style="opacity: 0; transform: scale(0);"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-trash2 lucide-trash-2 w-4 h-4 text-red-600"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3 6h18"
+                        />
+                        <path
+                          d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+                        />
+                        <path
+                          d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+                        />
+                        <line
+                          x1="10"
+                          x2="10"
+                          y1="11"
+                          y2="17"
+                        />
+                        <line
+                          x1="14"
+                          x2="14"
+                          y1="11"
+                          y2="17"
+                        />
+                      </svg>
+                      Delete
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                  data-slot="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-square-pen"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                    />
+                    <path
+                      d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
+                    />
+                  </svg>
+                  Edit
+                </button>
+              </footer>
+            </article>
+          </div>
+        </div>
+        <div
+          class="flex items-center px-6 [.border-t]:pt-6"
+          data-slot="card-footer"
+        >
+          <div>
+            <button
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 rounded-r-none border-r-0 border-l rounded-l-3xl"
+              data-slot="button"
+              disabled=""
+            >
+              1
+            </button>
+            <button
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 rounded-r-none rounded-l-none border-l-0 border-r-0"
+              data-slot="button"
+            >
+              2
+            </button>
+            <button
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 rounded-l-none border-l-0 border-r rounded-r-3xl"
+              data-slot="button"
+            >
+              3
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
