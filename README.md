@@ -53,6 +53,9 @@ Start the development server:
 yarn dev
 ```
 
+## New User
+
+In the browser open http://localhost:3000/register and register as new user.
 
 ## Testing 
 (Please add new env file (`.env.test`) for testing, you can duplicate the existing one and change the DB if needed `.env.local`)
